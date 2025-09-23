@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts and Badges</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="py-3 text-center">Bootstrap Alert</h2>
+        <div class="row py-3 justify-content-center">
+            <div class="col-md-7">
+                <div class="alert alert-primary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A, iure.
+                    <button class="btn-close" data-bs-dismiss="alert" aria-label=" Close">
+                        <!-- <span>&times</span> -->
+                    </button>
+                </div>
+
+            </div>
+            <div class="col-md-7">
+                <div class="alert alert-success">
+                    Lorem ipsum dolor <a class="alert-link" href=""> amet consectetur adipisicing</a> elit. A, iure.
+                    <button class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div id="redbox" class="alert alert-danger">
+                    <h3>Heading Goes Here</h3>
+                    <button class="btn-close mx-3" data-bs-dismiss="alert" aria-label="close"></button>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, exercitationem. Sint
+                        exercitationem voluptatibus reiciendis saepe quidem mollitia fugiat, nam possimus debitis
+                        architecto illo quod illum amet libero minima id dolores excepturi iusto, laudantium esse
+                        aliquam? Debitis, nostrum. Facere soluta nostrum quaerat expedita ratione reprehenderit, dolore
+                        laudantium placeat sit eius, exercitationem cum delectus perspiciatis est nam? Sit tempore
+                        ratione iusto, illum cupiditate facilis voluptates rem dignissimos repellendus commodi corporis
+                        recusandae mollitia alias fuga nemo reiciendis molestias possimus quaerat optio? Vel corrupti,
+                        ea veritatis ut necessitatibus libero saepe laborum atque perferendis unde non porro odit nihil
+                        facilis! Accusantium excepturi facere repellendus quod?</p>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aliquid maxime voluptatem
+                        molestias at aliquam, reiciendis cum iure. Repellat nam veniam ab nemo, consectetur aliquam
+                        blanditiis iure dolores rerum voluptate!</p>
+                </div>
+            </div>
+            
+            <!-- BOOTSTRAP BADGES -->
+            <div class="row py-3">
+                <div class="col">
+                    <h1>Example Heading <span class="badge text-bg-primary">New</span></h1>
+                    <h2>Example Heading <span class="badge rounded-pill text-bg-success">New</span></h2>
+                    <button class="btn btn-primary">Notifications
+                        <span class="badge text-bg-light">5</span>
+                    </button>
+                    <a href="" class="badge text-bg-info">Read More</a>
+                    <a href="" class="badge rounded-pill text-bg-danger p-2">Read More</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel est aliquam dolorem dignissimos
+                        <span class="badge text-bg-warning">rerum modi praesentium </span> totam officiis eveniet
+                        doloremque ut, pariatur hic consequatur, corporis maxime, non voluptate provident tempore?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
