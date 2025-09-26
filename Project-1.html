@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="/style1.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body>
-    <div class="header_top">
+    <div class="header_top" style="font-size: 13px;">
         <div class="container-fluid d-flex align-items-center text-bg-secondary">
             <a href="" class="text-white text-decoration-none mx-5 my-2">
                 <img src="/Images/Mailbox.png" height="20" width="20" class="" alt="">
@@ -22,17 +24,20 @@
                 <img src="/Images/Phone.png" height="15" width="20" class=" " alt="">
                 (+27) 71 332 8391
             </a>
+            <div class="ml-auto header_top_right" style="margin-left: 710px;">
+                <img src="/Images/Arabic.svg" class="mx-2" height="17" width="17">Arabic
+            </div>
         </div>
-        <div class="ml-auto header_top_right">
-        </div>
+
+
     </div>
 
-    <header class="main_header sticky">
+    <header class="main_header">
         <nav class="d-inline bg-white navbar-expand navabar-light">
-            <div class="d-flex align-items-center justify-content-between mx-5 container">
+            <div class="d-flex align-items-center justify-content-between mx-5 my-2 container">
                 <div>
                     <a href="" class="navabar-brand">
-                        <img src="/Images/Navbar Brand.png" height="60" width="200" class="ml-5" alt="">
+                        <img src="/Images/Navbar Brand.png" height="60" width="200" class="mx-4" alt="">
                     </a>
                 </div>
 
@@ -57,31 +62,79 @@
                         </ul>
                     </div>
                 </div>
+                <button class="btn" type="button">
+                    <img src="/Images/flag 1.svg" height="28" width="32" alt="">
+                </button>
             </div>
-            <hr>
+            <hr class="m-0">
         </nav>
     </header>
 
-    <div class="d-flex w-100">
-        <div id="Carousel" class="carousel slide" data-ride="carousel">
+    <div>
+        <div id="BannerCarouselAutoPlaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/Images/Banner_SA.e43dea10.jpg" height="5%" width="1260px" alt="">
+                <div class="carousel-item position-relative">
+                    <img src="/Images/Banner_SA.e43dea10.jpg" height="280" width="1280" alt="">
+
+                    <div class="banner-item position-absolute">
+                        <p class="display-5">Send your stuff,
+                            <span class="text-primary">FAST!</span>
+                        </p>
+                        <p>International Courier Service, Simplified!</p>
+                    </div>
                 </div>
+                <div class="carousel-item active">
+                    <p class="fs-1"><strong>Got Cargo? We will
+                            <span class="text-success">Ship</span>
+                            it!</strong>
+                    </p>
+                    <p class="banner-item">Door to door solutions for commercial
+                        <span class="text-primary">|</span>
+                        personel effects
+                    </p>
+                    <img src="/Images/Banner2.png" height="280" width="1280px" alt="">
+                </div>
+
                 <div class="carousel-item">
-                    <img src="/Images/Banner2.png" height="5%" width="1260px" alt="">
+                    <p class="fs-1 m-5 mt-2 d-flex justify-content-center"><strong>We Ship
+                            <span class="text-secondary fs-1">Almost</span>
+                            Anything</strong>
+                    </p>
+                    <div class="main-banner w-100 d-flex justify-content-center">
+                        <div class="img-fluid d-flex justify-content-between align-items-center flex-column col-4">
+                            <img src="/Images/parcel.png" width="80" class="mx-5" alt="">
+                            <div class="mx-5 mt-3">Parcels</div>
+                        </div>
+
+                        <div class="img-fluid d-flex justify-content-between align-items-center flex-column col-4">
+                            <img src="/Images/parcel.png" width="80" class="mx-5" alt="">
+                            <div class="mx-5 mt-3">Parcels</div>
+                        </div>
+
+                        <div class="img-fluid d-flex justify-content-between align-items-center flex-column col-4">
+                            <img src="/Images/parcel.png" width="80" class="mx-5" alt="">
+                            <div class="mx-5 mt-3">Parcels</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#Carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#BannerCarouselAutoPlaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
 
-            <button class="carousel-control-next" type="button" data-bs-target="#Carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <button class="carousel-control-next" type="button" data-bs-target="#BannerCarouselAutoPlaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+
         </div>
     </div>
 
