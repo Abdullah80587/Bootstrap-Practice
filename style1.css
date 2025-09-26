@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-ul {
-    margin-top: 0px;
-    padding-top: 0px;
+body {
+    font-family: Montserrat;
 }
