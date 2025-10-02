@@ -7,3 +7,74 @@
 body {
     font-family: Montserrat;
 }
+
+.container-fluid {
+    background: #404B51;
+    font-family: Montserrat;
+    height: 40px;
+}
+
+.nav-item {
+    font-weight: 600;
+    font: #00B8AD;
+}
+
+.dimension-card-parent {
+    font-size: 13px;
+}
+
+/* .dimension-card img{
+    padding-left: 25px;
+} */
+/* .dimension-card .title{
+    padding-left: 2px;
+} */
+hr {
+    border: 2px solid white;
+}
+
+.container {
+    margin-top: 100px;
+    background-color: none;
+}
+
+.card1 {
+    background-color: #404B51;
+    border-radius: 30px;
+}
+
+.carousel-item p strong {
+    margin-top: 60px;
+    font-weight: 2rem;
+}
+
+.service-header {
+    color: #00B7AE;
+}
+
+.service-header button {
+    border-radius: 12px;
+    border-bottom: 6px solid;
+    border-color: #00B7AE;
+}
+
+.service-header button p {
+    width: 400px;
+}
+
+.dimension-card img {
+    margin-left: 4rem !important;
+}
+
+.table,
+.table th,
+.table td {
+    margin-left: 50px;
+    border-bottom: none;
+    border-top: none;
+}
+
+.table tr {
+    margin-left: 50px;
+
+}
