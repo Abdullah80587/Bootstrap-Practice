@@ -74,7 +74,10 @@ hr {
     border-top: none;
 }
 
+.table, .text-light {
+    background-color: #404B51;
+}
+
 .table tr {
     margin-left: 50px;
-
 }
