@@ -78,10 +78,10 @@ hr {
     margin-left: 50px;
     border-bottom: none;
     border-top: none;
+    background-color: #404B51;
 }
 
-.table,
-.text-light {
+table {
     background-color: #404B51;
 }
 
@@ -91,7 +91,6 @@ hr {
 
 .section {
     padding: 0px 120px 0px 100px;
-
 }
 
 .section .content {
@@ -113,10 +112,30 @@ hr {
     /* font-size: 3rem; */
 }
 
+.content h4{
+    color: #00B7AE;
+}
+
 .booking-section {
-    padding: 0px 120px 0px 120px;
+    padding: 0px 120px 120px 120px;
 }
 
 #packaging-Solution {
-        padding: 0px 120px 120px 120px;
+    padding: 0px 120px 0px 120px;
+}
+
+.packaging-items h4 {
+    color: #00B7AE;
+}
+
+.cube-main h3 {
+    color: #00B7AE;
+}
+
+.text-section h5 {
+    color: #00B7AE;
+}
+
+h4 .text-center{
+    color: #00B7AE;
 }
