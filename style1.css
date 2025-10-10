@@ -21,7 +21,7 @@ body {
 
 .nav-item,
 .nav-link {
-    font-color: #00B7AE;
+    color: #00B7AE;
 }
 
 .dimension-card-parent {
@@ -108,11 +108,8 @@ table {
 
 }
 
-.section .section-title h1 {
-    /* font-size: 3rem; */
-}
 
-.content h4{
+.content h4 {
     color: #00B7AE;
 }
 
@@ -136,6 +133,29 @@ table {
     color: #00B7AE;
 }
 
-h4 .text-center{
+h4 .text-center {
     color: #00B7AE;
+}
+
+/* SHIP SECTION */
+#ship-section .section-title {
+    color: #404B51;
+}
+
+.row2 .tealbackground {
+    background: #00B7AE;
+}
+
+.row2 h6 {
+    color: #404B51;
+    font-weight: bold;
+}
+
+.row3 h6 {
+    color: #404B51;
+    font-weight: bold;
+}
+
+.row3 .tealbackground {
+    background: #00B7AE;
 }
