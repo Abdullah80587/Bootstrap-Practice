@@ -14,23 +14,44 @@
      height: 40px;
  }
 
- .nav-item {
+ .nav-item a {
      font-weight: 600;
-     font: #00B7AE;
+     color: #00B7AE;
  }
 
- .nav-item,
- .nav-link {
+ .carousel-item p {
+     color: #404B51;
+ }
+
+ .carousel-item span {
      color: #00B7AE;
+ }
+
+ .banner-item span {
+     color: #00B7AE;
+ }
+
+ .service-header .text {
+     background-color: #00B7AE;
+ }
+
+ .service-header button:hover {
+     background: #00B7AE;
+     border-color: #00B7AE;
+ }
+
+ .service-header .border-end {
+     border-right: 2px solid #a7a7a7 !important;
  }
 
  .dimension-card-parent {
      font-size: 13px;
  }
 
- /* .dimension-card img{
-    padding-left: 25px;
-} */
+ .dimension-card-parent:hover {
+     background: #00B7AE;
+ }
+
  /* .dimension-card .title{
     padding-left: 2px;
 } */
