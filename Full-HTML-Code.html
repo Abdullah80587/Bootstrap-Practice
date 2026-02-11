@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!-- HTML5 declare karne ke liye -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- meta tags seo k liye use hoty hain ye charset="UTF-8" ye hr language ko support karti hai jaise hm apni site main special characters likhty hain wo ya phir emojis waghaira ko support karta hai-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- name="viewport" content="width=device-width, initial-scale=1.0" width hamari device k mutabiq ho jati hai aur scale zoom level ko 100% default karne k liye use ho raha hai, page ko responsive karne k liye use hota hai -->
+  <link rel="icon" type="image/png" href="favicon.jpg" />
+  <!-- favicon hamari website k title k saath icon ka show hai  -->
+  <title>Interview</title>
+  <!-- title hamaray webpage ka title show karta hai -->
+  <link rel="stylesheet" href="interview.css" />
+  <!-- ye link hm ne css import karne k liye use kia hai aur href main is ka path dia hai  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <!-- ye link hm ne bootstrap import karne k liye use kia hai ab hm is file main bootstrap ki classes ka use kr sakty hain -->
+</head>
+<!-- YE HM NE HTML KA BASIC STRUCTURE DAIKHA HAI JIS MAIN HAMAIN META TAGS, FAVICON, TITLE, CSS AND BOOTSTRAP KI IMPORTS KA PATA CHALA HAI  -->
+
+<body>
+  <!-- SIMPLE TAGS  -->
+  <p>Ye hamara paragraph tag hai</p>
+  <h1>hamaray paas h6 tk heading tags hoty hain</h1>
+
+  <!-- SELF-CLOSING TAGS  -->
+  <img src="something.jpg/png" alt="Error" />
+  <!-- agar kisi waja se hamari img show na hui ya hamaray paas ye na pari hui to hamain alt wala error show ho jay ga  -->
+  <input type="text" placeholder="Enter text" />
+  <!-- input ki beshumar types hoti hain yahan hm text add karty hain placeholder main hamain pata chalta hai k kia karna hai  -->
+  <input type="email" placeholder="Enter email" />
+  <input type="password" placeholder="Enter password" />
+  <input type="range" />
+  <input type="tel" placeholder="Enter phone number" />
+  <input type="url" placeholder="Enter valid url only " />
+  <input type="date" />
+  <input type="datetime-local" />
+  <input type="month" />
+  <input type="week" />
+  <input type="time" />
+  <input type="checkbox" />
+  <input type="radio" />
+  <input type="color" />
+  <!-- AB HM NE YAHAN KUCH WO TAGS DAIKHY HAIN JO SELF CLOSING HOTY HAIN AUR B KUCH
+     TAGS SELF CLOSING HOTY HAIN JAISE img, input, br, hr and meta tag etc -->
+
+  <a href="https://www.google.com">Vist google in that tab</a>
+  <!-- YE USI TAG MAIN OPEN HO JAY GA  -->
+
+  <hr />
+  <!-- is tag se in main aik line a jay gi -->
+
+  <a href="https://www.google.com" target="_blank"> Vist google in new tab</a>
+  <!-- YAHAN TARGET = "_blank" SE HAMAIN NEW TAB MAIN BHEJ DIA JAY GA  -->
+
+  <p>
+    this is the paragraph with <strong>bold</strong> and <em>italic</em> tag
+  </p>
+  <span>ye text itni hi jaga laita hai jitna de ho (inline element)</span>
+  <!-- YE KUCH AUR ZAROORI TAGS haan HTML K  -->
+
+  <ol>
+    <li>apple</li>
+    <li>banana</li>
+    <li>mango</li>
+  </ol>
+  <!-- YE ORDERED LIST BANI HAI AUR IS ANDR AIK LIST HAI JO K HAMAIN 1,2,3.. KR K SHOW HO GI  -->
+
+  <ul>
+    <li>apple</li>
+    <li>banana</li>
+    <li>mango</li>
+  </ul>
+  <!-- YE UN-ORDERED LIST HAI YAHAN HAMAIN DATA BULLETS MAIN SHOW HOTA HAI  -->
+
+  <nav>
+    <a href="home.html">click here to go to home page</a>
+    <br />
+    <a href="about.html">click here to go to about us page</a>
+    <br />
+    <a href="contact.html">click here to go to contact us page</a>
+    <br />
+  </nav>
+  <!-- nav NAVIGATE KARTA HAI HAMAIN DOOSRE PAGES PE JB HM IN PE CLICK KARTY HAIN YE HAMAIN RELOAD HONE K BAAD UN PAGES PE REDIRECT KARWA DAITA HAI  -->
+
+  <header>
+    <h6>Website Title</h6>
+  </header>
+  <!-- AGAR HM IS K ANDR NAV KO RAKH DAIN TO YE B HAMARA NAVIGATION ELEMENT BN JAY GA  -->
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Ali</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Zoi</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Que</td>
+      <td>26</td>
+    </tr>
+  </table>
+  <!-- YE HAMARAY PAAS SIMPLE TABLE FORM MAIN DATA PARA HUA HAI SB SE PEHLE HAMARAY PAAS TABLE HOTA HAI US K TABLE ROW ATI HAI PEHLI ROW MAIN AB TABLE HEAD HOTA HAI NEXT TABLE ROWS K ANDR TABLE DATA AY GA AUR END PE TABLE CLOSE HO JATA HAI -->
+
+  <table border:"3">
+    <tr>
+      <th colspan="2">Name</th>
+      <th colspan="1">Age</th>
+      <th colspan="3">Fields</th>
+    </tr>
+    <tr>
+      <td>Muhmmad</td>
+      <td>Ali</td>
+      <td>22</td>
+      <td>SE</td>
+      <td>CS</td>
+      <td>CE</td>
+    </tr>
+    <!-- YAHAN PR HM NE PROPPER TABLE BANAYA HAI JIS MAIN PEHLE BORDER=3 DIA HAI MTLB
+    HAMARAY PAAS TABLE K HEAD MAIN 3 CHEEZAIN HAIN NAME, AGE AUR FIELD AB NAME
+    MAIN HM NE COLSPAN 2 USE KIA HAI KYN K MOSTLY BANDOUN K 2 NAMES HOTY HAIN
+    JAISE MUHAMMAD ALI PHIR AGE MAIN AIK HI COLSPAN USE KIA HAI KYN K AGE TO AIK
+    HI HOTI HAI AIK BANDE KI AUR AKHIR MAIN FIELDS MAIN HM NE COLSPAN 3 USE KIA
+    HAI K ZYADA SE ZYADA AIK BANDA APNI 3 FIELDS KA DATA IS MAIN PUT KR SAKTA
+    HAI. -->
+
+    <tr>
+      <td>Ahmed</td>
+      <td>-</td>
+      <td>24</td>
+      <td>SE</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <!-- 2ND DATA MAIN HM NE YE CHEEZ DAIKHI K AGAR HM NE AIK BORDER K COLSPAN 2
+    LIA HUA HAI AUR BANDE KA NAAM BS ALI HI HAI TO B HAMAIN US MAIN - ATLEAST
+    DENA CHAHYA TAA K HAMARA DATA AGAY PEECHAY NA HO -->
+    <tr>
+      <td>Ahmed</td>
+      <td>24</td>
+      <td>SE</td>
+      <td>-</td>
+    </tr>
+  </table>
+  <!-- YAHAN HM DAIKH SAKTY HAIN K YE CHEEZAIN APNI APNI JAGA PE NI RAHIN KYN K UN KI JAGA PE KUCH NI HAI -->
+
+  <form action="submit.php" method="post">
+    <!-- YAHAN action = "submit.php" LIKHA HUA HAI IS KA MTLB HAI K HAMARA DATA JO SUBMIT.PHP FILE K ANDR KAHIN STORE HO RAHA HAI AUR POST METHOD K THROUGH STORE HO RAHA HAI YE SECURE METHOD HOTA HAI URL MAIN SHOW NI HOTA YE -->
+
+    <input type="text" placeholder="Enter Something" required />
+    <input type="email" placeholder="Enter email" required />
+  </form>
+  <!-- YE FORM USE KIY GY HAIN FORM K ANDR INPUT MAIN REQUIRED USE HUA HAI K USER AGAR ADD NI KARTA DATA TO USAY KAHA JAY PLEASE FILL OUT THIS FORM BEFORE SUBMIT.  -->
+
+  <form>
+    <select>
+      <option>Login</option>
+      <option>Signup</option>
+    </select>
+  </form>
+  <!-- YE B FORM KA AIK METHOD HAI YAHAN HAMAIN OPTIONS MILTY HAIN SELECT KARNE K LIYE  -->
+
+  <article>
+    <h2>25 ko Interview</h2>
+    <p>
+      ye tags hamain aise feel karwa rahay hain jaise hm news k andr paragraph
+      likh rahay hain aur uper heading di hai
+    </p>
+  </article>
+  <!-- YE MEANINGFUL TAGS HAIN ARTICLE LIKHA HAI HM NE ABI -->
+
+  <aside>
+    <p>this is a side bar</p>
+  </aside>
+  <!-- YE B KISI SITE MAIN KOI EXTRA INFO DALNE K LIYE USE HOTA HAI YA PHIR IS KO AS A NAVIGATION ELEMENT USE KR SAKTY HAIN AIK SIDE PE  -->
+
+  <p style="color: red">This is red color paragraph</p>
+  <br />
+  <p style="background-color: rgb(141, 179, 191)">
+    This is a paragraph with blue background
+  </p>
+  <!-- YE HM NE HTML KI INLINE MAIN CSS USE KI STYLE TAG KI MADAD SE  -->
+
+  <script>
+    alert("Hello javascript in HTML");
+  </script>
+  <p id="demo">ye hamara html paragraph hai</p>
+  <script>
+    document.getElementById("demo").innerHTML =
+      "jo hamara html ka paragraph tha wo ab javascript main html k through change ho gya hai";
+
+    console.log(document.title);
+  </script>
+
+  <!-- YAHAN HM NE HTML K ANDR SCript TAG KA USE KR K JAVASCRIPT B LIKH LI HAI  -->
+</body>
+
+</html>
