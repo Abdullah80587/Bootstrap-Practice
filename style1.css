@@ -1,161 +1,162 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
 
-body {
-    font-family: Montserrat;
-}
+ body {
+     font-family: Montserrat;
+ }
 
-.container-fluid {
-    background: #404B51;
-    font-family: Montserrat;
-    height: 40px;
-}
+ .container-fluid {
+     background: #404B51;
+     font-family: Montserrat;
+     height: 40px;
+ }
 
-.nav-item {
-    font-weight: 600;
-    font: #00B8AD;
-}
+ .nav-item {
+     font-weight: 600;
+     font: #00B7AE;
+ }
 
-.nav-item,
-.nav-link {
-    color: #00B7AE;
-}
+ .nav-item,
+ .nav-link {
+     color: #00B7AE;
+ }
 
-.dimension-card-parent {
-    font-size: 13px;
-}
+ .dimension-card-parent {
+     font-size: 13px;
+ }
 
-/* .dimension-card img{
+ /* .dimension-card img{
     padding-left: 25px;
 } */
-/* .dimension-card .title{
+ /* .dimension-card .title{
     padding-left: 2px;
 } */
-hr {
-    border: 2px solid white;
-}
+ hr {
+     border: 2px solid white;
+ }
 
-.container {
-    margin-top: 100px;
-    background-color: none;
-}
+ .container {
+     margin-top: 100px;
+     background-color: none;
+ }
 
-.card1 {
-    background-color: #404B51;
-    border-radius: 30px;
-}
+ .card1 {
+     background-color: #404B51;
+     border-radius: 30px;
+ }
 
-.carousel-item p strong {
-    /* margin-top: 60px; */
-    /* font-weight: 2rem; */
-    font-size: 3rem;
-}
+ .carousel-item p strong {
+     /* margin-top: 60px; */
+     /* font-weight: 2rem; */
+     font-size: 3rem;
+ }
 
-.service-header {
-    color: #00B7AE;
-}
+ .service-header {
+     color: #00B7AE;
+ }
 
-.service-header button {
-    border-radius: 12px;
-    border-bottom: 6px solid;
-    border-color: #00B7AE;
-}
+ .service-header button {
+     border-radius: 12px;
+     border-bottom: 6px solid;
+     border-color: #00B7AE;
+ }
 
-.service-header button p {
-    width: 400px;
-}
+ .service-header button p {
+     width: 400px;
+ }
 
-.dimension-card img {
-    margin-left: 4rem !important;
-}
+ .dimension-card img {
+     margin-left: 4rem !important;
+ }
 
-.table,
-.table th,
-.table td {
-    margin-left: 50px;
-    border-bottom: none;
-    border-top: none;
-    background-color: #404B51;
-}
+ .table,
+ .table th,
+ .table td {
+     margin-left: 50px;
+     border-bottom: none;
+     border-top: none;
+     background-color: #404B51;
+ }
 
-table {
-    background-color: #404B51;
-}
+ table {
+     background-color: #404B51;
+ }
 
-.table tr {
-    margin-left: 50px;
-}
-
-.section {
-    padding: 0px 120px 0px 100px;
-}
-
-.section .content {
-    background: #EAEAEA;
-}
-
-.section .content p {
-    margin-bottom: 0rem;
-    /* background: #EAEAEA; */
-}
-
-.col-lg-4 .bottom-section p {
-    font-size: 12px;
-    font-weight: bold;
-
-}
+ .table th tr .text {
+     margin-left: 50px;
+     background-color: #404B51;
+ }
 
 
-.content h4 {
-    color: #00B7AE;
-}
+ .section {
+     padding: 0px 120px 0px 100px;
+ }
 
-.booking-section {
-    padding: 0px 120px 120px 120px;
-}
+ .section .content {
+     background: #EAEAEA;
+ }
 
-#packaging-Solution {
-    padding: 0px 120px 0px 120px;
-}
+ .section .content p {
+     margin-bottom: 0rem;
+     /* background: #EAEAEA; */
+ }
 
-.packaging-items h4 {
-    color: #00B7AE;
-}
+ .col-lg-4 .bottom-section p {
+     font-size: 12px;
+     font-weight: bold;
 
-.cube-main h3 {
-    color: #00B7AE;
-}
+ }
 
-.text-section h5 {
-    color: #00B7AE;
-}
+ .content h4 {
+     color: #00B7AE;
+ }
 
-h4 .text-center {
-    color: #00B7AE;
-}
+ .booking-section {
+     padding: 0px 120px 120px 120px;
+ }
 
-/* SHIP SECTION */
-#ship-section .section-title {
-    color: #404B51;
-}
+ #packaging-Solution {
+     padding: 0px 120px 0px 120px;
+ }
 
-.row2 .tealbackground {
-    background: #00B7AE;
-}
+ .packaging-items h4 {
+     color: #00B7AE;
+ }
 
-.row2 h6 {
-    color: #404B51;
-    font-weight: bold;
-}
+ .cube-main h3 {
+     color: #00B7AE;
+ }
 
-.row3 h6 {
-    color: #404B51;
-    font-weight: bold;
-}
+ .text-section h5 {
+     color: #00B7AE;
+ }
 
-.row3 .tealbackground {
-    background: #00B7AE;
-}
+ h4 .text-center {
+     color: #00B7AE;
+ }
+
+ /* SHIP SECTION */
+ #ship-section .section-title {
+     color: #404B51;
+ }
+
+ .row2 .tealbackground {
+     background: #00B7AE;
+ }
+
+ .row2 h6 {
+     color: #404B51;
+     font-weight: bold;
+ }
+
+ .row3 h6 {
+     color: #404B51;
+     font-weight: bold;
+ }
+
+ .row3 .tealbackground {
+     background: #00B7AE;
+ }
