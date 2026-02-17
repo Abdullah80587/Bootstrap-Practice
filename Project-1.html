@@ -6,13 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ship My Stuff</title>
     <link rel="stylesheet" href="style1.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
 <body>
@@ -35,25 +33,34 @@
     <!-- NAVBAR  -->
     <header class="main_header">
         <nav class="d-inline bg-white navbar-expand navabar-light">
-            <div class="d-flex align-items-center justify-content-between mx-5 my-3 container">
+            <div class="d-flex align-items-start justify-content-sm-center mx-5 mx-sm-2 my-3 container">
                 <div>
-                    <a href="" class="navbar-brand">
+                    <a href="#" class="navbar-brand">
                         <img src="/Bootstrap-Practice/Images/Navbar Brand.png" height="50" width="220" class="mx-4"
                             alt="">
                     </a>
                 </div>
 
-                <div class="collapse navbar-collapse">
-                    <div class="w-100 d-flex justify-content-center align-items-center">
-                        <ul class="d-flex justify-content-center align-items-center navbar-nav">
+                <div class="collapse navbar-collapse d-flex flex-sm-column ">
+                    <button class="navbar-toggler ms-5" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon mt-2 ">
+                            <img src="/Bootstrap-Practice/Images/lines.svg" alt="" width="25px">
+                        </span>
+                    </button>
+
+                    <div class="navbarNav w-100 justify-content-sm-start justify-content-center align-items-center"
+                        id="navbarNav">
+                        <ul class="d-flex flex-sm-column align-items-center navbar-nav">
                             <li class="nav-item px-4">
-                                <a href="" class="nav-link fw-bold">Home</a>
+                                <a href="#" class="nav-link fw-bold">Home</a>
                             </li>
                             <li class="nav-item px-4">
-                                <a href="" class="nav-link fw-bold">Services</a>
+                                <a href="#" class="nav-link fw-bold">Services</a>
                             </li>
                             <li class="nav-item px-4">
-                                <a href="" class="nav-link fw-bold">Resources</a>
+                                <a href="#" class="nav-link fw-bold">Resources</a>
                             </li>
                             <li class="nav-item px-4">
                                 <a href="" class="nav-link fw-bold">Contact Us</a>
@@ -62,13 +69,18 @@
                                 <a href="" class="nav-link fw-bold">Track Parcel</a>
                             </li>
                         </ul>
+                        <!-- <button aria-label="Toggle navigation" type="button" class="navbar-toggler">
+                            <span class="navbar-toggler-icon"></span>
+                        </button> -->
                     </div>
+
+                    <button class="btn pe-3 m-sm-0 flex-sm-row navbarNav border-0" type="button" id="navbarNav">
+                        <img src="/Bootstrap-Practice/Images/flag 1.svg" class="navbarNav b-0" height="28" width="32"
+                            alt="">
+                    </button>
                 </div>
-                <button class="btn pe-3" type="button">
-                    <img src="/Bootstrap-Practice/Images/flag 1.svg" height="28" width="32" alt="">
-                </button>
+                <hr class="m-0">
             </div>
-            <hr class="m-0">
         </nav>
     </header>
 
@@ -143,14 +155,14 @@
     </div>
 
     <!-- INTERNATIONAL COURIER -->
-    <div class="container">
+    <div class="container mt-sm-3">
         <div class="row d-flex justify-content-center">
             <div class="col-12">
                 <div class="card bg-secondary mb-5 rounded-5">
                     <div class="card1">
-                        <div class="service-header d-flex">
-                            <div class="col-2 ms-5 mt-5">
-                                <button class="btn btn-outline-primary px-5" type="button">
+                        <div class="service-header d-flex flex-sm-column">
+                            <div class="col-2 col-sm-10 ms-5 mt-5 w-5 me-sm-5 ">
+                                <button class="btn btn-outline-primary px-5 mb-sm-1 mr-mb-2" type="button">
                                     <span class="d-flex justify-content-center ">
                                         <img src="/Bootstrap-Practice/Images/Car.png"
                                             class="d-flex justify-content-center py-1" height="50" width="70">
@@ -158,7 +170,7 @@
                                 </button>
                             </div>
 
-                            <div class="col-2 mt-5">
+                            <div class="col-2 col-sm-10 mt-5 mt-sm-1 mx-sm-5">
                                 <button class="text btn btn-outline-primary px-5" type="button">
                                     <span class="d-flex justify-content-center ">
                                         <img src="/Bootstrap-Practice/Images/Image 1.png"
@@ -167,7 +179,7 @@
                                     </buttons>
                             </div>
 
-                            <div class="col-2 mt-5">
+                            <div class="col-2 col-sm-10 mt-5 mt-sm-1 ms-sm-5">
                                 <button class="btn btn-outline-primary px-5" type="button">
                                     <span class="d-flex justify-content-center">
                                         <img src="/Bootstrap-Practice/Images/Ship.png"
@@ -176,7 +188,7 @@
                                 </button>
                             </div>
 
-                            <div class="col-4 mb-3 mt-5">
+                            <div class="col-4 col-sm-10 mb-3 mt-5 mt-sm-1 mx-sm-5">
                                 <button class="text btn pt-2 px-2 d-flex justify-content-start py-1" type="button">
                                     <span class="w-100 ps-4 pe-4" width="100px">
                                         <p class="text fs-4 fw-bold text-light">INTERNATIONAL COURIER</p>
@@ -187,46 +199,46 @@
 
                         <div class="d-flex row">
                             <div class="col mx-5">
-                                <div class="service-header bg-white d-flex">
+                                <div class="service-header bg-white d-flex pb-sm-2">
                                     <div class="service-header-item col-3 mt-2 px-5">
                                         <span
                                             class="heading fw-bold justify-item-center d-flex justify-content-center">1.</span>
-                                        <p class="text-uppercase fw-bold">Shipment Details</p>
+                                        <p class="text-uppercase fw-bold d-sm-none">Shipment Details</p>
                                     </div>
-                                    <span class="border-end border-secondary my-2"></span>
+                                    <span class="border-end border-secondary my-2 pt-sm-4"></span>
 
                                     <div class="service-header-item col-3 mt-2">
                                         <span class="heading fw-bold d-flex justify-content-center">2.</span>
-                                        <p class="text-uppercase fw-bold px-3">Origin & Destination</p>
+                                        <p class="text-uppercase fw-bold px-3 d-sm-none">Origin & Destination</p>
                                     </div>
                                     <span class="border-end border-secondary my-2"></span>
 
 
                                     <div class="service-header-item col-3 mt-2">
                                         <span class="heading fw-bold d-flex justify-content-center">3.</span>
-                                        <p class="text-uppercase fw-bold ps-5">Quote Estimates</p>
+                                        <p class="text-uppercase fw-bold ps-5 d-sm-none">Quote Estimates</p>
                                     </div>
                                     <span class="border-end border-secondary my-2"></span>
 
 
                                     <div class="service-header-item col-3 mt-2">
                                         <span class="heading fw-bold d-flex justify-content-center">4.</span>
-                                        <p class="text-uppercase fw-bold ps-5">Confirm Booking</p>
+                                        <p class="text-uppercase fw-bold ps-5 d-sm-none">Confirm Booking</p>
                                     </div>
                                 </div>
-                                <hr class="text-light" style="border:2px solid;">
+                                <hr class="text-light opacity-100 col-sm-12" style="border:1.5px solid;">
                             </div>
                         </div>
 
-                        <div class="row d-flex">
+                        <div class="row">
                             <div class="col-12">
                                 <div class="item-details d-flex mt-4 mb-2">
                                     <div class="dimension-card-parent col-2 bg-light ms-5 rounded-1">
                                         <div class="dimension-card w-100">
                                             <img src="/Bootstrap-Practice/Images/parcel.png" alt="" height="30"
                                                 class="ps-2 mt-3">
-                                            <p class="title ps-5 fw-bold mb-0">A4 Envelope</p>
-                                            <p class="dimension ps-5 pb-1">(33 X 4 X 23 cm)</p>
+                                            <p class="title ps-5 ps-sm-2 fw-bold mb-0">A4 Envelope</p>
+                                            <p class="dimension ps-5 ps-sm-2 pb-1">(33 X 4 X 23 cm)</p>
                                         </div>
                                     </div>
 
@@ -234,8 +246,8 @@
                                         <div class="dimension-card">
                                             <img src="/Bootstrap-Practice/Images/parcel.png" alt="" height="30"
                                                 class="ps-2 mt-3">
-                                            <p class="title ps-5 fw-bold mb-0">A4 Envelope</p>
-                                            <p class="dimension ps-5 pb-2">(33 X 4 X 23 cm)</p>
+                                            <p class="title ps-5 ps-sm-2 fw-bold mb-0">A4 Envelope</p>
+                                            <p class="dimension ps-5 ps-sm-2 pb-2">(33 X 4 X 23 cm)</p>
                                         </div>
                                     </div>
 
@@ -243,8 +255,8 @@
                                         <div class="dimension-card">
                                             <img src="/Bootstrap-Practice/Images/parcel.png" alt="" height="30"
                                                 class="ps-2 mt-3">
-                                            <p class="title ps-5 fw-bold mb-0">A4 Envelope</p>
-                                            <p class="dimension ps-5 pb-2">(33 X 4 X 23 cm)</p>
+                                            <p class="title ps-5 ps-sm-2 fw-bold mb-0">A4 Envelope</p>
+                                            <p class="dimension ps-5 ps-sm-2 pb-2">(33 X 4 X 23 cm)</p>
                                         </div>
                                     </div>
 
@@ -252,32 +264,33 @@
                                         <div class="dimension-card">
                                             <img src="/Bootstrap-practice/Images/parcel.png" alt="" height="30"
                                                 class="ps-2 mt-3">
-                                            <p class="title ps-5 fw-bold mb-0">A4 Envelope</p>
-                                            <p class="dimension ps-5 pb-2">(33 X 4 X 23 cm)</p>
+                                            <p class="title ps-5 ps-sm-2 fw-bold mb-0">A4 Envelope</p>
+                                            <p class="dimension ps-5 ps-sm-2 pb-2">(33 X 4 X 23 cm)</p>
                                         </div>
                                     </div>
 
-                                    <div class="dimension-card-parent col-2 bg-light ms-4 rounded-1">
+                                    <div
+                                        class="d-sm-none dimension-card-parent col-2 flex-sm-row bg-light ms-4 rounded-1">
                                         <div class="dimension-card">
                                             <img src="/Bootstrap-practice/Images/parcel.png" alt="" height="30"
                                                 class="ps-2 mt-3">
-                                            <p class="title ps-5 fw-bold mb-0">A4 Envelope</p>
-                                            <p class="dimension ps-5 pb-2">(33 X 4 X 23 cm)</p>
+                                            <p class="title ps-5 ps-sm-2 fw-bold mb-0">A4 Envelope</p>
+                                            <p class="dimension ps-5 ps-sm-2 pb-2">(33 X 4 X 23 cm)</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="row d-flex">
+                        <div class="row">
                             <div class="col-12">
                                 <div class="item-details d-flex mt-0 ms-0 mb-2">
                                     <div class="dimension-card-parent col-2 bg-light ms-5 rounded-1">
                                         <div class="dimension-card w-100">
                                             <img src="/Bootstrap-practice/Images/parcel.png" alt="" height="30"
                                                 class="ps-2 mt-3">
-                                            <p class="title ps-5 fw-bold mb-0">A4 Envelope</p>
-                                            <p class="dimension ps-5 pb-1">(33 X 4 X 23 cm)</p>
+                                            <p class="title ps-5 ps-sm-2 fw-bold mb-0">A4 Envelope</p>
+                                            <p class="dimension ps-5 ps-sm-2 pb-1">(33 X 4 X 23 cm)</p>
                                         </div>
                                     </div>
 
@@ -285,8 +298,8 @@
                                         <div class="dimension-card w-100">
                                             <img src="/Bootstrap-practice/Images/parcel.png" alt="" height="30"
                                                 class="ps-2 mt-3">
-                                            <p class="title ps-5 fw-bold mb-0">A4 Envelope</p>
-                                            <p class="dimension ps-5 pb-1">(33 X 4 X 23 cm)</p>
+                                            <p class="title ps-5 ps-sm-2 fw-bold mb-0">A4 Envelope</p>
+                                            <p class="dimension ps-5 ps-sm-2 pb-1">(33 X 4 X 23 cm)</p>
                                         </div>
                                     </div>
 
@@ -294,8 +307,8 @@
                                         <div class="dimension-card w-100">
                                             <img src="/Bootstrap-practice/Images/parcel.png" alt="" height="30"
                                                 class="ps-2 mt-3">
-                                            <p class="title ps-5 fw-bold mb-0">A4 Envelope</p>
-                                            <p class="dimension ps-5 pb-1">(33 X 4 X 23 cm)</p>
+                                            <p class="title ps-5 ps-sm-2 fw-bold mb-0">A4 Envelope</p>
+                                            <p class="dimension ps-5 ps-sm-2 pb-1">(33 X 4 X 23 cm)</p>
                                         </div>
                                     </div>
 
@@ -303,17 +316,17 @@
                                         <div class="dimension-card w-100">
                                             <img src="/Bootstrap-practice/Images/parcel.png" alt="" height="30"
                                                 class="ps-2 mt-3">
-                                            <p class="title ps-5 fw-bold mb-0">A4 Envelope</p>
-                                            <p class="dimension ps-5 pb-1">(33 X 4 X 23 cm)</p>
+                                            <p class="title ps-5 ps-sm-2 fw-bold mb-0">A4 Envelope</p>
+                                            <p class="dimension ps-5 ps-sm-2 pb-1">(33 X 4 X 23 cm)</p>
                                         </div>
                                     </div>
 
-                                    <div class="dimension-card-parent col-2 bg-light ms-4 rounded-1">
+                                    <div class="d-sm-none dimension-card-parent col-2 bg-light ms-4 rounded-1">
                                         <div class="dimension-card w-100">
                                             <img src="/Bootstrap-practice/Images/parcel.png" alt="" height="30"
                                                 class="ps-2 mt-3">
-                                            <p class="title ps-5 fw-bold mb-0">A4 Envelope</p>
-                                            <p class="dimension ps-5 pb-1">(33 X 4 X 23 cm)</p>
+                                            <p class="title ps-5 ps-sm-2 fw-bold mb-0">A4 Envelope</p>
+                                            <p class="dimension ps-5 ps-sm-2 pb-1">(33 X 4 X 23 cm)</p>
                                         </div>
                                     </div>
                                 </div>
@@ -327,8 +340,8 @@
                                         <div class="dimension-card w-100">
                                             <img src="/Bootstrap-practice/Images/parcel.png" alt="" height="30"
                                                 class="ps-2 mt-3">
-                                            <p class="title ps-5 fw-bold mb-0">A4 Envelope</p>
-                                            <p class="dimension ps-5 pb-1">(33 X 4 X 23 cm)</p>
+                                            <p class="title ps-5 ps-sm-2 fw-bold mb-0">A4 Envelope</p>
+                                            <p class="dimension ps-5 ps-sm-2 pb-1">(33 X 4 X 23 cm)</p>
                                         </div>
                                     </div>
 
@@ -336,8 +349,8 @@
                                         <div class="dimension-card w-100">
                                             <img src="/Bootstrap-practice/Images/parcel.png" alt="" height="30"
                                                 class="ps-2 mt-3">
-                                            <p class="title ps-5 fw-bold mb-0">A4 Envelope</p>
-                                            <p class="dimension ps-5 pb-1">(33 X 4 X 23 cm)</p>
+                                            <p class="title ps-5 ps-sm-2 fw-bold mb-0">A4 Envelope</p>
+                                            <p class="dimension ps-5 ps-sm-2 pb-1">(33 X 4 X 23 cm)</p>
                                         </div>
                                     </div>
 
@@ -345,8 +358,8 @@
                                         <div class="dimension-card w-100">
                                             <img src="/Bootstrap-practice/Images/parcel.png" alt="" height="30"
                                                 class="ps-2 mt-3">
-                                            <p class="title ps-5 fw-bold mb-0">A4 Envelope</p>
-                                            <p class="dimension ps-5 pb-1">(33 X 4 X 23 cm)</p>
+                                            <p class="title ps-5 ps-sm-2 fw-bold mb-0">A4 Envelope</p>
+                                            <p class="dimension ps-5 ps-sm-2 pb-1">(33 X 4 X 23 cm)</p>
                                         </div>
                                     </div>
 
@@ -354,90 +367,86 @@
                                         <div class="dimension-card w-100">
                                             <img src="/Bootstrap-practice/Images/parcel.png" alt="" height="30"
                                                 class="ps-2 mt-3">
-                                            <p class="title ps-5 fw-bold mb-0">A4 Envelope</p>
-                                            <p class="dimension ps-5 pb-1">(33 X 4 X 23 cm)</p>
+                                            <p class="title ps-5 ps-sm-2 fw-bold mb-0">A4 Envelope</p>
+                                            <p class="dimension ps-5 ps-sm-2 pb-1">(33 X 4 X 23 cm)</p>
                                         </div>
                                     </div>
 
-                                    <div class="dimension-card-parent col-2 bg-light ms-4 rounded-1">
+                                    <div class="d-sm-none dimension-card-parent col-2 bg-light ms-4 rounded-1">
                                         <div class="dimension-card w-100">
                                             <img src="/Bootstrap-practice/Images/parcel.png" alt="" height="30"
                                                 class="ps-2 mt-3">
-                                            <p class="title ps-5 fw-bold mb-0">A4 Envelope</p>
-                                            <p class="dimension ps-5 pb-1">(33 X 4 X 23 cm)</p>
+                                            <p class="title ps-5 ps-sm-2 fw-bold mb-0">A4 Envelope</p>
+                                            <p class="dimension ps-5 ps-sm-2 pb-1">(33 X 4 X 23 cm)</p>
                                         </div>
                                     </div>
                                 </div>
-                                <hr class="text-white mx-5" style="border:2px solid;">
+                                <hr class="text-white mx-5 opacity-100" style="border:1.5px solid;">
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-11">
-                                <table class="table mt-4 text-center">
+                        <div class="row w-sm-5">
+                            <div class="col-11 col-sm-12 w-sm-100">
+                                <table class="table table-responsive mt-4">
                                     <thead>
-                                        <tr class="bg-secondary">
-                                            <th class="text text-uppercase bg-secondary text-light pb-4">Weight</th>
-                                            <th class="text-uppercase bg-secondary text-light pb-4">length</th>
-                                            <th class="text-uppercase bg-secondary text-light pb-4">width</th>
-                                            <th class="text-uppercase bg-secondary text-light pb-4">height</th>
+                                        <tr>
+                                            <th class="text-uppercase text-center text-light pb-4">Weight</th>
+                                            <th class="text-uppercase text-center text-light pb-4">length</th>
+                                            <th class="text-uppercase text-center text-light pb-4">width</th>
+                                            <th class="text-uppercase text-center text-light pb-4">height</th>
                                         </tr>
                                     </thead>
 
                                     <tbody>
                                         <tr>
-                                            <td class="col-2 bg-secondary">
+                                            <td class="col-2 col-sm-6 table-body">
                                                 <div class="form-group" width="100px">
                                                     <div class="input-group">
                                                         <input type="number" placeholder="Min 0.3kg"
                                                             class="form-control">
-                                                        <span
-                                                            class="input-group-text bg-success text-light me-2">KG</span>
-
+                                                        <span class="input-group-text text-light me-2">KG</span>
                                                     </div>
                                                 </div>
                                             </td>
 
-                                            <td class="col-2 bg-secondary">
+                                            <td class="col-2 col-sm-6">
                                                 <div class="form-group" width="100px">
                                                     <div class="input-group">
                                                         <input type="number" placeholder="Min 1cm" class="form-control">
-                                                        <span
-                                                            class="input-group-text bg-success text-light me-2">CM</span>
+                                                        <span class="input-group-text text-light me-2">CM</span>
                                                     </div>
                                                 </div>
                                             </td>
 
-                                            <td class="col-2 bg-secondary">
+                                            <td class="col-2 col-sm-6">
                                                 <div class="form-group" width="100px">
                                                     <div class="input-group">
                                                         <input type="number" placeholder="Min 1cm" class="form-control">
-                                                        <span
-                                                            class="input-group-text bg-success text-light me-2">CM</span>
+                                                        <span class="input-group-text text-light me-2">CM</span>
                                                     </div>
                                                 </div>
                                             </td>
 
-                                            <td class="col-2 bg-secondary">
+                                            <td class="col-2 col-sm-6">
                                                 <div class="form-group" width="100px">
                                                     <div class="input-group">
                                                         <input type="number" placeholder="Min 1cm" class="form-control">
-                                                        <span
-                                                            class="input-group-text bg-success text-light me-2">CM</span>
+                                                        <span class="input-group-text text-light me-2">CM</span>
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td class="col-1 w-0 p-0">
+
+                                            <td class="col-1 p-0">
                                                 <div class="increase_button_height">
                                                     <button type="button"
-                                                        class="btn-plus mt-md-1 btn btn-secondary btn-sm">
-                                                        <i class="fas fa-plus"></i>
+                                                        class="btn-plus mt-md-1 w-1 ms-4 btn btn-success btn-sm">
+                                                        <i class="fas fa-plus text-dark"></i>
                                                     </button>
                                                 </div>
                                                 <div class="decrease_button_height">
                                                     <button type="button"
-                                                        class="btn-plus mt-md-1 btn btn-secondary btn-sm">
-                                                        <i class="fas fa-minus"></i>
+                                                        class="btn-minus mt-md-1 ms-4 w-1 btn btn-success btn-sm">
+                                                        <i class="fas fa-minus text-white m-0 p-0"></i>
                                                     </button>
                                                 </div>
                                             </td>
@@ -446,19 +455,20 @@
                                 </table>
                             </div>
                         </div>
+
                         <div class="row mt-2">
-                            <div class="col">
+                            <div class="col col-sm-9">
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input ms-4" height="13" width="13">
                                     <span class="text-uppercase fw-bold text-white ms-2">Insure your parcel/cargo
                                         against</span>
                                     <br>
-                                    <span class="text-uppercase fw-bold text-success ms-5">theft, loss or
+                                    <span class="text-uppercase fw-bold ms-5">theft, loss or
                                         damage</span>
                                 </div>
                             </div>
 
-                            <div class="col-4 text-left align-right mt-5 me-5 mb-3 pe-5">
+                            <div class="col-4 col-sm-10 ms-sm-5 text-left align-right mt-5 mt-sm-2 me-5 mb-3 pe-5">
                                 <div class="card">
                                     <span class="pt-2 ps-2"><strong>Total Weight: 0 kg</strong></span>
                                     <span class="ps-2"><strong>Total Vol. Weight: 0 kg</strong></span>
@@ -468,9 +478,8 @@
                         </div>
 
                         <div class="col-12 d-flex justify-content-end mb-3 pe-5">
-                            <button type="submit" class="btn-large bg-success px-3 py-2 rounded-2" width="100px"
-                                height="150px">
-                                <i class="fa-solid fa-arrow-right text-light" style="font-size: 25px;"></i>
+                            <button type="submit" class="btn-large px-3 py-2 rounded-3" width="100px" height="200px">
+                                <i class="fa-solid fa-arrow-right text-light" style="font-size: 32px;"></i>
                             </button>
                         </div>
                     </div>
@@ -480,9 +489,9 @@
     </div>
 
     <!-- COURIER ACCOUNTS -->
-    <div class="no-gutters row bg-dark me-0">
-        <div class="col-4 h-100 d-flex justify-content-center pb-2">
-            <img src="/Bootstrap-practice/Images/Account.png" alt="" class="pt-2" width="80px" height="80px">
+    <div class="courier no-gutters row me-0">
+        <div class="col-4 h-100 d-flex justify-content-center  pb-2">
+            <img src="/Bootstrap-practice/Images/Account.png" alt="" class="pt-2" width="90px" height="90px">
             <span class="text-white pt-4 ps-2">
                 <strong class="ps-4">NO MORE</strong>
                 <br>
@@ -490,7 +499,7 @@
         </div>
 
         <div class="col-4 h-100 d-flex justify-content-center pb-2">
-            <img src="/Bootstrap-practice/Images/Multi quotes.png" alt="" class="pt-2" width="80px" height="80px">
+            <img src="/Bootstrap-practice/Images/Multi quotes.png" alt="" class="pt-2" width="90px" height="90px">
             <span class="text-white pt-4 ps-2">
                 Multiple Quotes
                 <br>
@@ -498,7 +507,7 @@
         </div>
 
         <div class="col-4 h-100 d-flex justify-content-center pb-2">
-            <img src="/Bootstrap-practice/Images/Saving you.png" alt="" class="pt-2" width="80px" height="80px">
+            <img src="/Bootstrap-practice/Images/Saving you.png" alt="" class="pt-2" width="90px" height="90px">
             <span class="text-white pt-4 ps-2">
                 <strong class="ps-2">SAVING YOU</strong>
                 <br>
@@ -510,17 +519,17 @@
     <div id="oursolutions">
         <div class="section">
             <div class="container m-0">
-                <div class="row">
+                <div class="row mt-5 pt-4">
                     <div class="col-12">
                         <div class="section-title text-center">
-                            <h1 class="text-uppercase text-bold">Our Solutions</h1>
+                            <h1 class="text-uppercase m-0">Our Solutions</h1>
                             <p class="fs-5">End-to-end shipping solutions, simplified</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="services row">
-                    <div class="col-lg-6 mt-5">
+                    <div class="col-lg-6 mt-4 col-sm-12 mb-2">
                         <img src="/Bootstrap-practice/Images/Courier1.png" height="100px" width="630px"
                             class="img-fluid rounded-top-3 me-3">
                         <div class="content">
@@ -539,7 +548,7 @@
 
                                 <div class="row">
                                     <div class="col">
-                                        <p class="sub-text mt-3 mb-1 ps-2">
+                                        <p class="menu sub-text mt-3 mb-1 ps-2 fw-bold">
                                             <i class="fa-solid fa-check" style="font-size:13px"></i>
                                             No accounts required
                                         </p>
@@ -548,7 +557,7 @@
                                     <div class="col-md-6">
                                         <div class=" d-flex justify-content-start row">
                                             <div class="d-flex justify-content-start col">
-                                                <p class="sub-text mt-3 mb-0">
+                                                <p class="menu sub-text mt-3 mb-0 fw-bold">
                                                     <i class="fa-solid fa-check" style="font-size:13px"></i>
                                                     No second-guessing
                                                 </p>
@@ -559,14 +568,14 @@
 
                                 <div class="justify-content-start row">
                                     <div class="justify-content-start col-md-6">
-                                        <p class="sub-text mt-0 ps-2">
+                                        <p class="menu sub-text mt-0 ps-2 fw-bold">
                                             <i class="fa-solid fa-check" style="font-size:13px"></i>
                                             No time wasted
                                         </p>
                                     </div>
 
                                     <div class="justify-content-start col-md-6">
-                                        <p class="sub-text">
+                                        <p class="menu sub-text fw-bold">
                                             <i class="fa-solid fa-check" style="font-size:13px"></i>
                                             Instant online quotes
                                         </p>
@@ -575,9 +584,10 @@
 
                                 <div class="row ms-1">
                                     <div class="col-md-6 mt-2">
-                                        <button class="btn btn-success mb-3" type="button">INSTANT QUOTE
+                                        <button class="btn btn-success mb-3 fw-bold text-white" type="button">INSTANT
+                                            QUOTE
                                             <img src="/Bootstrap-practice/Images/Car.png" alt="" width="30px"
-                                                class="ms-5">
+                                                class="ms-4">
                                         </button>
                                     </div>
                                 </div>
@@ -585,7 +595,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-6 mt-5 mb-2">
+                    <div class="col-lg-6 mt-4 mb-2">
                         <img src="/Bootstrap-practice/Images/Airfreight1.png" width="630px"
                             class="img-fluid rounded-top-3">
                         <div class="content pt-3">
@@ -607,7 +617,7 @@
 
                                 <div class="row">
                                     <div class="col">
-                                        <p class="sub-text mt-3 mb-1 ps-2">
+                                        <p class="menu sub-text mt-3 mb-1 ps-2 fw-bold">
                                             <i class="fa-solid fa-check" style="font-size:13px"></i>
                                             Commercial
                                         </p>
@@ -616,7 +626,7 @@
                                     <div class="col-md-6">
                                         <div class=" d-flex justify-content-start row">
                                             <div class="d-flex justify-content-start col">
-                                                <p class="sub-text mt-3 mb-0">
+                                                <p class="menu sub-text mt-3 mb-0 fw-bold">
                                                     <i class="fa-solid fa-check" style="font-size:13px"></i>
                                                     Personel effects
                                                 </p>
@@ -627,14 +637,14 @@
 
                                 <div class="justify-content-start row">
                                     <div class="justify-content-start col-md-6">
-                                        <p class="sub-text mt-0 ps-2">
+                                        <p class="menu sub-text mt-0 ps-2 fw-bold">
                                             <i class="fa-solid fa-check" style="font-size:13px"></i>
                                             No hidden costs
                                         </p>
                                     </div>
 
                                     <div class="justify-content-start col-md-6">
-                                        <p class="sub-text mt-">
+                                        <p class="menu sub-text fw-bold">
                                             <i class="fa-solid fa-check" style="font-size:13px"></i>
                                             Instant online quotes
                                         </p>
@@ -643,9 +653,10 @@
 
                                 <div class="row">
                                     <div class="col-md-6 ms-2 mt-2">
-                                        <button class="btn btn-success fs-6 mb-3" type="button">INSTANT QUOTE
+                                        <button class="btn btn-success mb-3 fw-bold text-white" type="button">INSTANT
+                                            QUOTE
                                             <img src="/Bootstrap-practice/Images/Image 1.png" alt="" width="30px"
-                                                class="ms-5 me-2">
+                                                class="ms-4 me-2">
                                         </button>
                                     </div>
                                 </div>
@@ -653,7 +664,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 mt-3">
-                        <img src="/Bootstrap-practice/Images/shipping.png" width="324px" height="140px"
+                        <img src="/Bootstrap-practice/Images/shipping.png" width="324px" height="148px"
                             class="rounded-top-3" alt="">
 
                         <div class="content">
@@ -694,7 +705,7 @@
 
                                 <div class="row">
                                     <div class="col">
-                                        <p class="sub-text mt-3 mb-1 ps-2">
+                                        <p class="sub-text mt-1 mb-1 ps-2">
                                             <i class="fa-solid fa-check" style="font-size:13px"></i>
                                             Home relocations
                                         </p>
@@ -703,7 +714,7 @@
                                     <div class="col-md-6">
                                         <div class=" d-flex justify-content-start row">
                                             <div class="d-flex justify-content-start col">
-                                                <p class="sub-text mt-3 mb-0">
+                                                <p class="sub-text mt-1 mb-0">
                                                     <i class="fa-solid fa-check" style="font-size:13px"></i>
                                                     FCL & LCL
                                                 </p>
@@ -714,19 +725,20 @@
                             </div>
                             <div class="row mt-2">
                                 <div class="d-flex justify-content-center col col-md-12">
-                                    <p class="sub-text">Inquire sea freight >></p>
+                                    <p class="sub-text fw-bold">Inquire sea freight >></p>
                                 </div>
                             </div>
                             <div class="row mt-2">
                                 <div class="d-flex justify-content-center col col-md-12">
-                                    <p class="sub-text mb-3">International Relocations>></p>
+                                    <p class="sub-text mb-3 fw-bold">International Relocations>></p>
+                                    <hr>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-4 mt-3">
-                        <img src="/Bootstrap-practice/Images/packaging1.jpeg" width="324px" height="140px"
+                        <img src="/Bootstrap-practice/Images/packaging1.jpeg" width="324px" height="144px"
                             class="rounded-top-3" alt="">
 
                         <div class="content">
@@ -745,7 +757,7 @@
                                 <div class="row">
                                     <div class="col">
                                         <p class="sub-text mt-3 mb-1 ps-2">
-                                            <i class="fa-solid fa-check" style="font-size:13px"></i>
+                                            <i class="fa-solid fa-check" style="font-size:12px"></i>
                                             Move cube
                                         </p>
                                     </div>
@@ -754,7 +766,7 @@
                                         <div class=" d-flex justify-content-start row">
                                             <div class="d-flex justify-content-start col">
                                                 <p class="sub-text mt-3 mb-0">
-                                                    <i class="fa-solid fa-check" style="font-size:13px"></i>
+                                                    <i class="fa-solid fa-check" style="font-size:12px"></i>
                                                     Crating & packing
                                                 </p>
                                             </div>
@@ -764,8 +776,8 @@
 
                                 <div class="row">
                                     <div class="col">
-                                        <p class="sub-text mt-3 mb-1 ps-2">
-                                            <i class="fa-solid fa-check" style="font-size:13px"></i>
+                                        <p class="sub-text mt-1 mb-1 ps-2">
+                                            <i class="fa-solid fa-check fw-bold" style="font-size:12px"></i>
                                             Container loading
                                         </p>
                                     </div>
@@ -773,8 +785,8 @@
                                     <div class="col-md-6">
                                         <div class=" d-flex justify-content-start row">
                                             <div class="d-flex justify-content-start col">
-                                                <p class="sub-text mt-3 mb-0">
-                                                    <i class="fa-solid fa-check" style="font-size:13px"></i>
+                                                <p class="sub-text mt-1 mb-0">
+                                                    <i class="fa-solid fa-check" style="font-size:11px"></i>
                                                     Hazardous packaging
                                                 </p>
                                             </div>
@@ -784,7 +796,7 @@
                             </div>
                             <div class="row">
                                 <div class="d-flex justify-content-center col col-md-12">
-                                    <p class="sub-text mb-5 mt-2">View our packaging solutions >></p>
+                                    <p class="sub-text mb-5 mt-2 fw-bold">View our packaging solutions >></p>
                                 </div>
                             </div>
                         </div>
@@ -812,8 +824,8 @@
 
                                 <div class="row">
                                     <div class="col">
-                                        <p class="sub-text mt-3 mb-1 ps-2">
-                                            <i class="fa-solid fa-check" style="font-size:13px"></i>
+                                        <p class="sub-text mt-3 mb-1 ps-1">
+                                            <i class="fa-solid fa-check" style="font-size: 12px"></i>
                                             Process optimisation
                                         </p>
                                     </div>
@@ -822,7 +834,7 @@
                                         <div class=" d-flex justify-content-start row">
                                             <div class="d-flex justify-content-start col">
                                                 <p class="sub-text mt-3 mb-0">
-                                                    <i class="fa-solid fa-check" style="font-size:13px"></i>
+                                                    <i class="fa-solid fa-check" style="font-size:12px"></i>
                                                     Business intelligence
                                                 </p>
                                             </div>
@@ -832,17 +844,17 @@
 
                                 <div class="row">
                                     <div class="col pe-0">
-                                        <p class="sub-text mt-3 mb-1 ps-2 ">
-                                            <i class="fa-solid fa-check" style="font-size:13px"></i>
-                                            Supply chain consulting
+                                        <p class="sub-text mt-2 mb-1 ps-1">
+                                            <i class="fa-solid fa-check" style="font-size:12px"></i>
+                                            Supply chain
                                         </p>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class=" d-flex justify-content-start row">
                                             <div class="d-flex justify-content-start col">
-                                                <p class="sub-text mt-3 mb-0">
-                                                    <i class="fa-solid fa-check" style="font-size:13px"></i>
+                                                <p class="sub-text mt-2 mb-0">
+                                                    <i class="fa-solid fa-check" style="font-size:12px"></i>
                                                     Transport consulting
                                                 </p>
                                             </div>
@@ -852,7 +864,7 @@
                             </div>
                             <div class="row mt-2">
                                 <div class="d-flex justify-content-center col col-md-12">
-                                    <p class="sub-text mb-5">Book your free consultation >></p>
+                                    <p class="sub-text mb-5 fw-bold">Book your free consultation >></p>
                                 </div>
                             </div>
                         </div>
@@ -876,10 +888,10 @@
             </div>
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-4">
-                    <div class="img d-flex justify-content-center">
+                    <div class="img d-flex justify-content-center me-5">
                         <img src="/Bootstrap-practice/Images/Find.png" width="130px" height="130px" alt="">
                     </div>
-                    <div class="content text-center" style="background-color: white;">
+                    <div class="content text-center me-5" style="background-color: white;">
                         <h4 class="mt-2 fs-3">FIND</h4>
                         <p class="fs-5 text-dark" style="margin-bottom: 0px;">Address Information</p>
                         <p class="fs-5">POINT A <<>> POINT B</p>
@@ -898,10 +910,10 @@
                 </div>
 
                 <div class="col-lg-4">
-                    <div class="img d-flex justify-content-center">
+                    <div class="img d-flex justify-content-center ms-4">
                         <img src="/Bootstrap-practice/Images/Book.png" width="130px" height="130px" alt="">
                     </div>
-                    <div class="content text-center" style="background-color: white;">
+                    <div class="content text-center ms-4" style="background-color: white;">
                         <h4 class="mt-2 fs-3">BOOK</h4>
                         <p class="fs-5 text-dark" style="margin-bottom: 0px;">Book your shipment</p>
                         <p class="fs-5">ONLINE</p>
@@ -979,7 +991,7 @@
                                         <div class="d-flex justify-content-center">
                                             <img src="/Bootstrap-practice/Images/data img.png" alt="" height="20px"
                                                 class="pe-4">
-                                            <h5 class="fs-6 ps-3">Travel Suitcases / Bags</h5>
+                                            <h5 class="fs-6 ps-3 text-right">Travel Suitcases / Bags</h5>
                                         </div>
 
                                         <div class="d-flex justify-content-center">
@@ -988,8 +1000,7 @@
                                             <h5 class="fs-6">TV / Golf Bags / Suitcases</h5>
                                         </div>
                                         <hr class="mx-auto mt-4" width="67%" style="border: 0.5px solid black">
-                                        <h4 class="px-4 text-bold fs-6 text-center text-bold pt-3 lh-lg mb-5"
-                                            style="color: #00B7AE;">
+                                        <h4 class="px-4 fs-6 text-center pt-3 lh-lg mb-5" style="color: #00B7AE;">
                                             General cargo not
                                             exceeding the inner
                                             dimensions of the move
@@ -1019,7 +1030,7 @@
             <div class="row mb-4">
                 <div class="col">
                     <div class="section-title text-center">
-                        <h1 class="fs-1" style="font-size: 3rem!important;">WHY SHIP MY STUFF</h1>
+                        <h1 class="fs-5" style="font-size: 3rem!important;">WHY SHIP MY STUFF</h1>
                     </div>
                 </div>
             </div>
@@ -1153,13 +1164,13 @@
     </div>
 
     <!-- COURIER SECTION -->
-    <div class="row mb-5 me-0">
+    <div class="row mb-0 me-0">
         <div class="col-12 col-xl-4 mt-5 pt-5">
             <div class="courier-row">
                 <div class="courier-row sub-item row" style="border: 0.5px solid black;">
                     <h5 class="d-flex justify-content-center fw-bold py-4">DOMESTIC COURIER</h5>
                     <img src="/Bootstrap-practice/Images/Domestic Courier1.jpeg" class="px-0" alt="">
-                    <button type="button" class="fw-bold text-light bg-dark py-4 fs-4">
+                    <button type="button" class="fw-bold text-light py-4 fs-4">
                         INSTANT QUOTE
                         <img src="/Bootstrap-practice/Images/Car.png" width="60px" class="" alt="">
                     </button>
@@ -1177,13 +1188,13 @@
                     <img src="/Bootstrap-practice/Images/Sea Freight.jpeg" class="p-0" alt="">
 
                     <div class="col-12 d-flex p-0">
-                        <div class="col-6 bg-black">
-                            <button type="button" class="text-light fw-bold bg-dark py-4 fs-4 w-100">
+                        <div class="col-6">
+                            <button type="button" class="text-light fw-bold py-4 fs-4 w-100">
                                 COMMERCIAL
                             </button>
                         </div>
-                        <div class="col-6 bg-black">
-                            <button type="button" class="text-light py-1 fs-4 fw-bold bg-dark w-100">
+                        <div class="col-6">
+                            <button type="button" class="text-light py-1 fs-4 fw-bold w-100 h-100">
                                 INTERNATIONAL
                                 <br>
                                 RELOCATION
@@ -1199,7 +1210,7 @@
                 <div class="courier-row sub-item row" style="border: 0.5px solid black;">
                     <h5 class=" d-flex justify-content-center py-4 fw-bold">INTERNATIONAL COURIER</h5>
                     <img src="/Bootstrap-practice/Images/International Courier1.jpeg" class="px-0" alt="">
-                    <button type="button" class="fw-bold text-light bg-dark py-4 fs-4">
+                    <button type="button" class="fw-bold text-light py-4 fs-4">
                         INSTANT QUOTE
                         <img src="/Bootstrap-practice/Images/Image 1.png" width="60px" class="" alt="">
                     </button>
@@ -1211,19 +1222,19 @@
     <!--CUBIC METER CALCULATOR -->
     <div id="weightcalulator">
         <div class="booking-section ">
-            <div class="container">
+            <div class="container mb-0">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="section-title text-center">
-                            <h1 class="dispaly-1 ">CUBIC METER CALCULATOR</h1>
-                            <p class="fs-6">Let us help you calculate your parcel/cargo’s cubic meters.</p>
+                        <div class="section-title text-center mt-0">
+                            <h1 class="display-5 fw-bold">CUBIC METER CALCULATOR</h1>
+                            <p class="fs-5">Let us help you calculate your parcel/cargo’s cubic meters.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="row ">
                     <div class="col">
-                        <div class="calculator card bg-dark rounded-5">
+                        <div class="calculator card rounded-5" style="background-color: #404b51;">
                             <div class="row d-flex justify-content-center align-items-start pt-5">
                                 <div class="col-sm-12 col-md-3 col-lg-2 text-light">
                                     <h5 class="text-center">UNIT OF <br> MEASUREMENT</h5>
@@ -1231,17 +1242,17 @@
 
                                 <div class="col-12 col-md-2">
                                     <div class="w-100 form-group">
-                                        <label class="text-white"> DIMENSION</label>
+                                        <label class="text-white fw-bold mb-2"> DIMENSION</label>
                                         <br>
-                                        <select name="" id=""></select>
+                                        <select name="" class="w-100 rounded-1" id=""></select>
                                     </div>
                                 </div>
 
                                 <div class="col-12 col-md-2">
                                     <div class="w-100 form-group">
-                                        <label class="text-white">WEIGHT</label>
+                                        <label class="text-white fw-bold mb-2">WEIGHT</label>
                                         <br>
-                                        <select name="" id=""></select>
+                                        <select name="" value="" id="" class="w-100 rounded-1"></select>
                                     </div>
                                 </div>
                             </div>
@@ -1250,69 +1261,61 @@
                                     <table class="table mt-4 text-center">
                                         <thead>
                                             <tr>
-                                                <th class="text text-uppercase bg-secondary text-light pb-4">Weight</th>
-                                                <th class="text-uppercase bg-secondary text-light pb-4">length</th>
-                                                <th class="text-uppercase bg-secondary text-light pb-4">width</th>
-                                                <th class="text-uppercase bg-secondary text-light pb-4">height</th>
+                                                <th class="text text-uppercase text-light pb-4">Weight</th>
+                                                <th class="text-uppercase text-light pb-4">length</th>
+                                                <th class="text-uppercase text-light pb-4">width</th>
+                                                <th class="text-uppercase text-light pb-4">height</th>
                                             </tr>
                                         </thead>
 
                                         <tbody>
                                             <tr>
-                                                <td class="col-2 bg-secondary">
+                                                <td class="col-2">
                                                     <div class="form-group" width="100px">
                                                         <div class="input-group">
-                                                            <input type="number" placeholder="Min 0.3kg"
-                                                                class="form-control">
-                                                            <span
-                                                                class="input-group-text bg-success text-light me-2">KG</span>
+                                                            <input type="number" placeholder="" class="form-control">
+                                                            <span class="input-group-text text-light me-2">KG</span>
                                                         </div>
                                                     </div>
                                                 </td>
 
-                                                <td class="col-2 bg-secondary">
+                                                <td class="col-2">
                                                     <div class="form-group" width="100px">
                                                         <div class="input-group">
-                                                            <input type="number" placeholder="Min 1cm"
-                                                                class="form-control">
-                                                            <span
-                                                                class="input-group-text bg-success text-light me-2">CM</span>
+                                                            <input type="number" placeholder="" class="form-control">
+                                                            <span class="input-group-text text-light me-2">CM</span>
                                                         </div>
                                                     </div>
                                                 </td>
 
-                                                <td class="col-2 bg-secondary">
+                                                <td class="col-2">
                                                     <div class="form-group" width="100px">
                                                         <div class="input-group">
-                                                            <input type="number" placeholder="Min 1cm"
-                                                                class="form-control">
-                                                            <span
-                                                                class="input-group-text bg-success text-light me-2">CM</span>
+                                                            <input type="number" placeholder="" class="form-control">
+                                                            <span class="input-group-text text-light me-2">CM</span>
                                                         </div>
                                                     </div>
                                                 </td>
 
-                                                <td class="col-2 bg-secondary">
+                                                <td class="col-2">
                                                     <div class="form-group" width="100px">
                                                         <div class="input-group">
-                                                            <input type="number" placeholder="Min 1cm"
-                                                                class="form-control">
-                                                            <span
-                                                                class="input-group-text bg-success text-light me-2">CM</span>
+                                                            <input type="number" placeholder="" class="form-control">
+                                                            <span class="input-group-text text-light me-2">CM</span>
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td class="col-1 w-0 p-0">
+                                                <td class="col-1 p-0">
                                                     <div class="increase_button_height">
                                                         <button type="button"
-                                                            class="btn-plus mt-md-1 btn btn-secondary btn-sm">
-                                                            <i class="fas fa-plus"></i>
+                                                            class="btn-plus mt-md-1 w-1 btn btn-success btn-sm">
+                                                            <i class="fas fa-plus text-dark"></i>
                                                         </button>
                                                     </div>
                                                     <div class="decrease_button_height">
                                                         <button type="button"
-                                                            class="btn-plus mt-md-1 btn btn-secondary btn-sm">
-                                                            <i class="fas fa-minus"></i>
+                                                            class="btn-minus mt-md-1 w-1 btn btn-success btn-sm">
+                                                            <i class="fas fa-minus text-white m-0 p-0"></i>
                                                         </button>
                                                     </div>
                                                 </td>
@@ -1321,11 +1324,11 @@
                                     </table>
                                 </div>
                             </div>
-                            <hr class="text-light m-3 ml-2 col-10" style="border: 2px solid white">
+                            <hr class="text-light ms-5 col-11 opacity-100" style="border: 1.5px solid">
                             <div class="row mx-4">
                                 <div class="w-152 col-md-3">
                                     <div class="form-group">
-                                        <p class="text-white fw-bold">
+                                        <p class="text-white fw-bold mb-2">
                                             Volume m3
                                         </p>
                                         <input readonly type="text" class="form-control" value="0">
@@ -1333,7 +1336,7 @@
                                 </div>
                                 <div class="w-152 col-md-3">
                                     <div class="form-group">
-                                        <p class="text-white fw-bold">
+                                        <p class="text-white fw-bold mb-2">
                                             Volume ft3
                                         </p>
                                         <input readonly type="text" class="form-control" value="0">
@@ -1341,7 +1344,7 @@
                                 </div>
                                 <div class="w-152 col-md-3">
                                     <div class="form-group">
-                                        <p class="text-white fw-bold">
+                                        <p class="text-white fw-bold mb-2">
                                             Volumetric Wt kg
                                         </p>
                                         <input readonly type="text" class="form-control" value="0">
@@ -1349,7 +1352,7 @@
                                 </div>
                                 <div class="w-152 col-md-3">
                                     <div class="form-group">
-                                        <p class="text-white fw-bold">
+                                        <p class="text-white fw-bold mb-2">
                                             Weight lbs
                                         </p>
                                         <input readonly type="text" class="form-control" value="0">
@@ -1359,7 +1362,7 @@
                             <div class="row mx-4">
                                 <div class="w-152 col-md-3">
                                     <div class="form-group">
-                                        <p class="text-white fw-bold">
+                                        <p class="text-white fw-bold mt-3 mb-2">
                                             Total m3
                                         </p>
                                         <input readonly type="text" class="form-control" value="0">
@@ -1367,7 +1370,7 @@
                                 </div>
                                 <div class="w-152 col-md-3">
                                     <div class="form-group">
-                                        <p class="text-white fw-bold">
+                                        <p class="text-white fw-bold mt-3 mb-2">
                                             Total ft3
                                         </p>
                                         <input readonly type="text" class="form-control" value="0">
@@ -1375,7 +1378,7 @@
                                 </div>
                                 <div class="w-152 col-md-3">
                                     <div class="form-group">
-                                        <p class="text-white fw-bold">
+                                        <p class="text-white fw-bold mt-3 mb-2">
                                             Total Vol. Wt kg
                                         </p>
                                         <input readonly type="text" class="form-control" value="0">
@@ -1383,7 +1386,7 @@
                                 </div>
                                 <div class="w-152 col-md-3">
                                     <div class="form-group">
-                                        <p class="text-white fw-bold">
+                                        <p class="text-white fw-bold mt-3 mb-2">
                                             Total Vol. Wt lbs
                                         </p>
                                         <input readonly type="text" class="form-control" value="0">
@@ -1393,7 +1396,7 @@
                             <div class="row w-auto text-center">
                                 <div class="col-md-12 pt-3 pb-4">
                                     <button type="button"
-                                        class="text-center fs-5 h-100 pt-2 pb-2 px-4 fw-bold rounded-2">RESET</button>
+                                        class="reset text-center text-white fs-5 h-100 pt-2 pb-2 px-4 fw-bold rounded-2">RESET</button>
                                 </div>
                             </div>
                         </div>
@@ -1405,19 +1408,19 @@
 
     <!-- FOOTER -->
     <footer>
-        <div class="footer_top bg-secondary">
+        <div class="footer">
             <div class="container pt-4 pb-4 mt-0">
                 <div class="row">
-                    <div class="col-lg-3 ps-5">
+                    <div class="col-lg-3 col-sm-12 ps-sm-2 ps-5">
                         <h5 class="text fw-bold">NEED HELP?</h5>
                         <div class="inner">
                             <ul class="footer-link list-unstyled">
                                 <li>
-                                    <a href="" class="text-decoration-none fw-bold text-dark">Contact Us</a>
+                                    <a href="" class="text-decoration-none fw-bold">Contact Us</a>
                                 </li>
                                 <li>
-                                    <a href="" class="text-decoration-none text-dark fw-bold">
-                                        <i class="far fa-envelope"></i>
+                                    <a href="" class="text-decoration-none fw-bold">
+                                        <i class="far fa-envelope pe-3"></i>
                                         info@shipmystuff.co.za
                                     </a>
                                 </li>
@@ -1427,7 +1430,7 @@
                         <div class="inner">
                             <ul class="footer-link list-unstyled">
                                 <li>
-                                    <a href="" class="text-deccoration-none text-dark">
+                                    <a href="" class="text-decoration-none">
                                         <i class="fab fa-facebook fa-1x me-2"></i>
                                         <i class="fab fa-instagram fa-1x me-2"></i>
                                         <i class="fab fa-linkedin fa-1x me-2"></i>
@@ -1437,7 +1440,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 ps-4">
+                    <div class="col-lg-3 col-sm-12 ms-sm-0 ps-sm-2 ps-4">
                         <h5 class="text fw-bold">QUOTING-SERVICES</h5>
                         <div class="inner text-decoration-none">
                             <ul class="footer-link fw-bold list-unstyled">
@@ -1472,23 +1475,25 @@
                 </div>
 
                 <div class="row">
-                    <div class="col">
+                    <div class="col links">
                         <div class="d-flex justify-content-center">
-                            <a href="" class="text-decoration-none fw-bold text-dark pe-3">Home</a>
+                            <a href="" class="text-decoration-none fw-bold pe-3">Home</a>
                             <span>|</span>
-                            <a href="" class="footer-link fw-bold px-3 text-decoration-none text-dark">Terms &
+                            <a href="" class="footer-link fw-bold px-3 text-decoration-none">Terms &
                                 Conditions</a>
                             <span>|</span>
-                            <a href="" class="fw-bold text-dark ps-3 text-decoration-none">Privacy Policy</a>
+                            <a href="" class="fw-bold ps-3 text-decoration-none">Privacy Policy</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="d-flex justify-content-center text-center align-items-center my-2">
+        <div class="d-flex justify-content-center align-items-center my-2">
             <span class="copyright-text fw-bold">Copyright @ 2022 Ship My Stuff | All Rights Reserved</span>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
