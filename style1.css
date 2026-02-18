@@ -423,4 +423,46 @@
             border-radius: 5px;
             justify-content: center;
         }
+
+        /* SHIP SECTION */
+        #ship-section .section-body {
+            display: flex;
+            flex-direction: column;
+            /* flex-wrap: wrap; */
+            flex-flow: column;
+
+        }
+
+        .section-body .row2,
+        .row3 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    @media only screen and (min-width:768px) and (max-width: 992px) {
+        .header_top {
+            display: none;
+        }
+
+        .navbar-collapse .navbar-toggler {
+            display: flex !important;
+            border: 0.5px solid #a7a7a7;
+            height: 45px;
+            width: 60px;
+            border-radius: 5px;
+            justify-content: center;
+        }
+
+        .section-body .row2,
+        .row3 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    @media only screen and (min-width:992px) and (max-width: 1200px) {
+        .header_top .number {
+            width: 300px;
+        }
     }
