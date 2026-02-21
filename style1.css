@@ -207,7 +207,9 @@
     .packaging-items h4 {
         color: #00B7AE;
     }
-
+    .packaging-solution .active-bg{
+        background: #EAEAEA;
+    }
     /* SHIP SECTION */
     #ship-section .section-title {
         color: #404B51;
