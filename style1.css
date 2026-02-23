@@ -82,14 +82,25 @@
         background-color: #404B51;
     }
 
+    .table .add-buttons {
+        height: 35px;
+    }
+
     .table .increase_button_height {
-        width: 45px;
+        /* width: 45px; */
+        margin-top: 0px;
+        padding: 0px;
+    }
+
+    .table .decrease_button_height {
+        width: 10px;
         margin-top: 0px;
         padding: 0px;
     }
 
     .table .increase_button_height .btn-plus {
         width: 25px;
+        height: 18px;
         margin-top: 0px;
         padding: 0px;
         background: white;
@@ -99,11 +110,16 @@
 
     .table .decrease_button_height .btn-minus {
         width: 25px;
+        height: 18px;
         margin-top: 0px;
         padding: 0px;
         background: #00B7AE;
         border: none;
         border-radius: 0px;
+    }
+
+    .increase_button_height i {
+        padding: 0px;
     }
 
     /* CARD1 */
@@ -129,8 +145,8 @@
     }
 
     .card1 .rounded-3 {
-        height: 65px;
-        width: 80px;
+        height: 57px;
+        width: 75px;
         background: #00B7AE;
     }
 
@@ -207,9 +223,11 @@
     .packaging-items h4 {
         color: #00B7AE;
     }
-    .packaging-solution .active-bg{
+
+    .packaging-solution .active-bg {
         background: #EAEAEA;
     }
+
     /* SHIP SECTION */
     #ship-section .section-title {
         color: #404B51;
@@ -241,6 +259,7 @@
     .courier-row button {
         background: #404B51;
         /* border-color: white; */
+        border-right: 1.5px solid white;
     }
 
     .courier-row .two {
@@ -278,13 +297,13 @@
 
     .table .decrease_button_height {
         width: 45px;
-        margin-top: 0px;
+        margin-right: 0px;
         padding: 0px;
     }
 
     .table .decrease_button_height .btn-minus {
         /* width: 25px; */
-        margin-top: 0px;
+        margin-right: 0px;
         padding: 0px;
         background: #00B7AE;
         border: none;
@@ -410,7 +429,7 @@
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            /* overflow-x: scroll; */
+            overflow-x: scroll;
         }
 
         .dimension-card img {
