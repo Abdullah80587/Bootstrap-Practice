@@ -28,10 +28,24 @@
         color: #00B7AE;
     }
 
+    .carousel-item p {
+        font-size: 2.2rem;
+        /* font-weight: bolder; */
+    }
+
     .carousel-item p strong {
         /* margin-top: 60px; */
         /* font-weight: 2rem; */
-        font-size: 3rem;
+        font-size: 3.8rem;
+        font-weight: bolder;
+    }
+
+    .carousel-item .ship {
+        color: #00B7AE;
+    }
+
+    .carousel-item .ship span {
+        color: #404B51;
     }
 
     .banner-item span {
@@ -39,6 +53,10 @@
     }
 
     /* INTERNATIONAL COURIER */
+    .container .card1 {
+        height: 20%;
+    }
+
     .service-header .text {
         background-color: #00B7AE;
     }
@@ -71,7 +89,7 @@
     }
 
     .dimension-card img {
-        margin-left: 4rem !important;
+        /* margin-left: 3rem !important; */
     }
 
     .dimension-card-parent:hover {
@@ -208,7 +226,7 @@
     }
 
     .booking-section {
-        padding: 0px 120px 120px 120px;
+        /* padding: 0px 120px 120px 120px; */
     }
 
     /* PACKAGING SOLUTION */
@@ -217,7 +235,7 @@
     }
 
     #packaging-Solution {
-        padding: 0px 120px 0px 120px;
+        /* padding: 0px 120px 0px 120px; */
     }
 
     .packaging-items h4 {
@@ -378,7 +396,7 @@
     }
 
     .section {
-        padding: 0px 120px 0px 100px;
+        /* padding: 0px 120px 0px 100px; */
     }
 
     .section .content {
@@ -411,6 +429,127 @@
         color: #00B7AE;
     }
 
+    @media only screen and (min-width:320px) and (max-width: 576px) {
+        .header_top {
+            display: none;
+        }
+
+        .navbar-brand img {
+            height: 50px;
+            width: 160px;
+        }
+
+        .navbar-expand .navbar-nav {
+            display: block;
+            flex-direction: column;
+        }
+
+        .navbar-light .navbar-toggler {
+            margin-top: 5px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-right: 13px;
+            padding-left: 13px;
+            border: 0.3px solid #EAEAEA;
+            border-radius: 5px;
+        }
+
+        .navbar-collapse ul {
+            margin-right: 100px;
+        }
+
+        .navbar-light .navbar-toggler-icon {
+            font-size: 15px;
+        }
+
+        .navbar-collapse {
+            animation-duration: 1s;
+        }
+
+        .navbar-toggler {
+            transition: 2s ease-in-out;
+        }
+
+        .navbar-expand .navbar-toggler {
+            display: block !important;
+        }
+
+        .img-fluid img {
+            height: 30px;
+        }
+
+        .carousel-item p {
+            font-size: 12px;
+        }
+
+        .carousel-items {
+            height: 250px;
+        }
+
+        .carousel-item img {
+            width: auto;
+        }
+
+        .carousel-item p strong {
+            /* margin-top: 60px; */
+            /* font-weight: 2rem; */
+            font-size: 1.1rem;
+        }
+
+        .service-header .col-6 {
+            font-size: 10px;
+        }
+
+        .service-header .courier {
+            font-size: 12px;
+        }
+
+        .row .item-details {
+            /* display: grid; */
+            /* grid-template-columns: repeat(2, 4fr); */
+        }
+
+        .dimension-card img {
+            margin-left: 1rem !important;
+        }
+
+        .dimension-card .title {
+            margin-left: 2px;
+        }
+
+        .dimension-card-parent {
+            height: 120px;
+            width: 80px;
+        }
+
+        .dimension-card .title,
+        .dimension {
+            margin-left: 5px;
+            font-size: 10px;
+        }
+
+        .card1 .form-check span {
+            font-size: 10px;
+        }
+
+        .decrease_button_height button {
+            background: #00B7AE;
+        }
+
+        .booking-section img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .application-section .mx-5 {
+            width: 100px;
+        }
+
+        .section-title h1 {
+            font-size: 37px !important;
+        }
+    }
+
     @media only screen and (min-width:576px) and (max-width: 768px) {
         .header_top {
             display: none;
@@ -420,9 +559,34 @@
             display: flex;
         }
 
+        /* .carousel-item */
+        .carousel-item img {
+            width: auto;
+        }
+
+        .carousel-item p strong {
+            font-size: 2.3rem;
+        }
+
+        .carousel-item p {
+            font-size: 1.2rem;
+        }
+
+        .img-fluid img {
+            height: 30px;
+        }
+
         /* INTERNATIONAL COURIER */
+        .container .card1 {
+            top: 50px;
+        }
+
         .service-header button {
             width: 100%;
+        }
+
+        .navbar nav ul {
+            margin-right: 100px
         }
 
         .table .wrap {
@@ -438,39 +602,51 @@
 
         .navbar-collapse .navbar-toggler {
             display: flex !important;
-            border: 0.5px solid #a7a7a7;
-            height: 45px;
-            width: 60px;
+            border: 0.5px solid #e6e4e4;
+            height: 42px;
+            width: 53px;
             border-radius: 5px;
             justify-content: center;
+        }
+
+        .decrease_button_height button {
+            background: #00B7AE;
         }
 
         /* SHIP SECTION */
         #ship-section .section-body {
             display: flex;
             flex-direction: column;
-            /* flex-wrap: wrap; */
             flex-flow: column;
-
         }
 
         .section-body .row2,
         .row3 {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(4, 0.4fr);
+        }
+
+        .section {
+            padding: 0% 90px;
         }
     }
 
     @media only screen and (min-width:768px) and (max-width: 992px) {
-        .header_top {
-            display: none;
+        .header-top a {
+            margin-top: 40px !important;
+        }
+
+        .header_top_right {
+            float: inline-end;
+            /* display: none; */
+
         }
 
         .navbar-collapse .navbar-toggler {
             display: flex !important;
-            border: 0.5px solid #a7a7a7;
-            height: 45px;
-            width: 60px;
+            border: 0.5px solid #e6e4e4;
+            height: 42px;
+            width: 53px;
             border-radius: 5px;
             justify-content: center;
         }
@@ -485,9 +661,35 @@
             margin-left: 2rem !important;
         }
 
+        /* CAROUSEL */
+        .carousel-item img {
+            /* height: auto; */
+            width: auto;
+        }
+
+        .carousel-item p strong {
+            top: 20%;
+            font-size: 2.7rem;
+        }
+
+        .carousel-item p {
+            font-size: 1.8rem;
+        }
+
+        .img-fluid img {
+            height: 70px;
+        }
+
+        .section {
+            padding: 0px 120px 0px 100px;
+        }
     }
 
     @media only screen and (min-width:992px) and (max-width: 1200px) {
+        .header_top_right {
+            float: inline-end;
+        }
+
         .header_top .number {
             width: 300px;
         }
@@ -513,14 +715,42 @@
         }
 
         .main_header .collapse {
-            margin-left: 100px;
+            margin-left: auto;
+        }
 
+        .navbar-collapse {
+            margin-left: auto;
+        }
+
+        .service-header .col-lg-6 {
+            width: 518px;
+        }
+
+        .service-header .courier {
+            font-size: 30px
+        }
+
+        .section {
+            padding: 0px 120px 0px 100px;
         }
     }
 
     @media only screen and (min-width:1200px) {
+        .header_top_right {
+            float: inline-end;
+            margin-top: 10px;
+        }
+
+        .service-header .col-xl-5 {
+            width: 437px;
+        }
+
+        .service-header .courier {
+            font-size: 27px
+        }
+
         .main_header .collapse {
-            margin-left: 90px;
+            top: 90px;
         }
 
         .ps-sm-2 {
@@ -541,5 +771,9 @@
         .card .pe-xl-5 {
             padding-right: 10rem !important;
             margin-right: 20px;
+        }
+
+        .section {
+            padding: 0px 120px 0px 100px;
         }
     }
