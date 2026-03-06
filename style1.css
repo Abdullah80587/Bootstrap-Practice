@@ -545,6 +545,10 @@
             width: 100px;
         }
 
+        .application-section .small-cube {
+            /* width: 210px; */
+        }
+
         .section-title h1 {
             font-size: 37px !important;
         }
