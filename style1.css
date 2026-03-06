@@ -30,12 +30,9 @@
 
     .carousel-item p {
         font-size: 2.2rem;
-        /* font-weight: bolder; */
     }
 
     .carousel-item p strong {
-        /* margin-top: 60px; */
-        /* font-weight: 2rem; */
         font-size: 3.8rem;
         font-weight: bolder;
     }
@@ -88,10 +85,6 @@
         font-size: 13px;
     }
 
-    .dimension-card img {
-        /* margin-left: 3rem !important; */
-    }
-
     .dimension-card-parent:hover {
         background: #00B7AE;
     }
@@ -105,7 +98,6 @@
     }
 
     .table .increase_button_height {
-        /* width: 45px; */
         margin-top: 0px;
         padding: 0px;
     }
@@ -225,17 +217,9 @@
         color: #00B7AE;
     }
 
-    .booking-section {
-        /* padding: 0px 120px 120px 120px; */
-    }
-
     /* PACKAGING SOLUTION */
     .packaging-main .section-title {
         color: #404B51;
-    }
-
-    #packaging-Solution {
-        /* padding: 0px 120px 0px 120px; */
     }
 
     .packaging-items h4 {
@@ -276,7 +260,6 @@
 
     .courier-row button {
         background: #404B51;
-        /* border-color: white; */
         border-right: 1.5px solid white;
     }
 
@@ -294,7 +277,6 @@
     }
 
     .table .col-1 {
-        /* width:px; */
         background-color: #404B51;
     }
 
@@ -380,7 +362,6 @@
     .table,
     .table th,
     .table td {
-        /* margin-left: 50px; */
         border-bottom: none;
         border-top: none;
         background-color: #404B51;
@@ -395,17 +376,12 @@
         background-color: #404B51;
     }
 
-    .section {
-        /* padding: 0px 120px 0px 100px; */
-    }
-
     .section .content {
         background: #EAEAEA;
     }
 
     .section .content p {
         margin-bottom: 0rem;
-        /* background: #EAEAEA; */
     }
 
     .col-lg-4 .bottom-section p {
@@ -491,8 +467,6 @@
         }
 
         .carousel-item p strong {
-            /* margin-top: 60px; */
-            /* font-weight: 2rem; */
             font-size: 1.1rem;
         }
 
@@ -502,11 +476,6 @@
 
         .service-header .courier {
             font-size: 12px;
-        }
-
-        .row .item-details {
-            /* display: grid; */
-            /* grid-template-columns: repeat(2, 4fr); */
         }
 
         .dimension-card img {
@@ -543,10 +512,6 @@
 
         .application-section .mx-5 {
             width: 100px;
-        }
-
-        .application-section .small-cube {
-            /* width: 210px; */
         }
 
         .section-title h1 {
@@ -642,8 +607,6 @@
 
         .header_top_right {
             float: inline-end;
-            /* display: none; */
-
         }
 
         .navbar-collapse .navbar-toggler {
@@ -667,7 +630,6 @@
 
         /* CAROUSEL */
         .carousel-item img {
-            /* height: auto; */
             width: auto;
         }
 
@@ -762,14 +724,12 @@
         }
 
         .table {
-            /* margin-left: 0px; */
             padding-left: 50px;
         }
 
         .card1 .col-md-5 {
             display: flex;
             justify-content: end;
-            /* padding-left: 400px; */
         }
 
         .card .pe-xl-5 {
