@@ -1,0 +1,236 @@
+h5 {
+  color: rgb(187, 0, 0);
+  background-color: aqua;
+  text-align: center;
+  border: 10px solid green;
+}
+/* IS CHEEZ KO HM KEHTY HAIN ELEMENT SELECTORS AUR YE DIRECT ELEMENTS KO LY KR UN MAIN STYLING KR DETA HAI  */
+
+.heading {
+  color: blueviolet;
+  background-color: black;
+  border: 5px solid aqua;
+  border-radius: 50px;
+  text-align: center;
+  margin: 100px;
+}
+/* YAHAN HM DAIKH RY HAIN K CLASS SELECTORS KAISE USE HOTY HAIN  */
+
+#header {
+  color: rgb(17, 185, 135);
+  background-color: rgb(85, 4, 4);
+  border: 20px solid rgb(74, 6, 81);
+  border-radius: 50px;
+  margin: 200px;
+  text-align: center;
+}
+/* YAHAN HM ID SELECTORS KA USE KR RAHAY HAIN  */
+
+h5,
+.heading,
+#header {
+  padding: 10px;
+}
+/* YAHAN HM GROUPING SELECTORS KA USE KR RAHAY HAIN K KAISE MULTIPLE CHEEZOUN KO AIK SAATH CSS DI JA SAKTI HAI  */
+
+input[type="text"] {
+  background-color: blue;
+  color: aliceblue;
+}
+/* YAHAN HM ATTRIBUTE SELECTORS KO USE KR K INPUT FIELD KA BACKGROUND COLOR CHANGE KR RAHAY HAIN  */
+
+button:hover {
+  color: blueviolet;
+  background-color: black;
+}
+li:nth-child(2) {
+  color: red;
+  /* Sirf second <li> ka color red ho jayega/ */
+}
+/* YE Pseudo-CLASSES HOTY HAIN JAISE K:
+:hover	Jab user element par mouse le jaye
+:focus	Jab element focus ho (e.g., input field)
+:active	Jab element click ho raha ho
+:first-child	Pehla child element select karega
+:last-child	Aakhri child element select karega
+:nth-child(n)	Specific child select karega (e.g., 2nd, 3rd, etc.)
+:nth-of-type(n)	Specific type ka nth element select karega
+:not(selector)	Jo selector diya ho usko exclude karega
+:checked	Jab checkbox ya radio button selected ho
+:disabled	Jab koi form element disabled ho
+:required	Jab koi input required ho
+:valid / :invalid	Jab input valid ya invalid ho  */
+
+h4 {
+  text-align: center;
+}
+h4::before {
+  text-transform: uppercase;
+  color: brown;
+  background-color: black;
+}
+input::placeholder {
+  text-transform: uppercase;
+  color: brown;
+  background-color: black;
+}
+/* YE PSEUDO ELEMENTS HOTY HAIN JIN KO :: SE DENOTE KIA JATA HAI  
+::before	Element ke start par content add karega
+::after	Element ke end par content add karega
+::first-letter	Pehle letter ko style karega
+::first-line	Pehli line ko style karega
+::selection	Jab user text ko select karega to styling apply hogi
+::placeholder	Input ke placeholder text ko style karega */
+
+div {
+  color: blue !important;
+}
+/* !important KA MTLB HAI K YE IMPORTANT HAI MTLB K IS MAIN JO INLINE CSS DIA GYA COLOR GREEN JB K AB BLUE DIA GYA HAI USI CHEEZ KO BUT AB SAATH !IMPORTANT A GYA HAI SO IS KI PRIORTY HIGH HO GAI HAI AB YE USE HO GA  */
+/* WAISE CSS MAIN AGAR DO DAFA AIKCHEEZ KO LIKHA JAY TO JO BAAD MAIN LIKHI GAI HOTI HAI US KO NOTE DOWN KIA JATA HAI   */
+
+/* .box {
+  text-align: center;
+  margin: 20px;
+  border: 3px solid rgb(29, 45, 4);
+  padding: 10px;
+  box-sizing: border-box; 
+}  */
+/* YAHAN HM AIK SIMPLE DABBA BANA RAHAY HAIN  */
+
+/* .static-box {
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  position: static;
+  background-color: lightblue;
+} */
+/* STATIC POSTION OF BOX DEFAULT POSITION HOTI HAI AUR IS SE YE HOTA HAI K JIS JAGA PE HM NE APNA BOX LAGAYA HOTA HAI WO STATIC HI REH JATA HAI MTLB APNI JAGA SE HILTA NAI HAI AUR DEFAULT B AISA HI HOTA HAI  */
+
+/* .relative-box {
+  position: relative;
+  top: 200px;
+  left: 300px;
+  width: 200px;
+  height: 100px;
+  background-color: lightcoral;
+} */
+/* RELATIVE POSITION MAIN HM NE JITNI LEFT RIGHT TOP BOTTOM JO B DI HUI HAI WO UTNA MOVE HO JAY GA AGAR HAM KHALI TOP LEFT RIGHT DAIN GY TO YE MOVE NI HO GA KYN K DEFAULT VALUE STATIC HOTI HAI POSITION RELATIVE DENI PARAY GI */
+
+/* .Parent-role-absolute-box {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  background-color: brown;
+  padding: 20px;
+}
+*/
+/* .absolute-box {
+  position: absolute;
+  bottom: 20px;
+  margin: 20px;
+  left: 50px;
+  width: 150px;
+  height: 100px;
+  background-color: rgb(2, 14, 2);
+} */
+/* YE PARENT K ACCORDING CHALTA RAHAY GA HM NE BOTTOM ERASE KIA HAI KYN K YE IS K ANDR HO JATA HAI */
+
+/* .fixed-box {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: lightpink;
+}   */
+/* YE FIXED POSITION TOP RIGHT WAGHAIRA DENE KI WAJA SE RIGHT SIDE OF THE SCREEN A JATI HAI AUR YE YAHIN FIXED REHTI HAI  */
+
+/* .sticky-box {
+  position: sticky;
+  top: 50px;
+  width: 200px;
+  height: 100px;
+  background-color: lightsalmon;
+} */
+/* Jab scroll hoga, yeh 50px ke baad stick ho jayega, STICKY MAIN AIK JAGA PE JA K POSITION STICKY HO JATI HAI JAISE MAIN NE TOP DIA HAI US HISAB SE YE CHALAY GA, yahan hamain fixed position chali hui nazar a rahi hoti hai lakin fixed ni actual main sticky chal raha hota hai */
+
+/* YE AIK AIK KR K CHAL SAKTI HAI IS LIYE SB COMMENTS KR DIA HAI  */
+/* static → Agar koi special positioning nahi chahiye. (Default)
+relative → Agar aap element ko apni jagah se thoda move karna chahte hain.
+absolute → Agar aap element ko kisi relative parent ke andar freely move karna chahte hain.
+fixed → Agar aap koi navbar ya sticky button banana chahte hain jo screen par fix rahe.
+sticky → Agar aap chahte hain ke element scroll ke sath ek point tak normal ho, phir chipak jaye. */
+/* DIFFERENCE B/W ALL  */
+
+/* .container { */
+/* display: flex; */
+/* justify-content: center; HORIZENTALLY CENTER (ROWS) */
+/* align-items: center; VERTICALLY CENTER (COLOUMNS) */
+/* } */
+
+/* .col {
+  margin: 15px;
+}
+.row {
+  border: 5px solid greenyellow;
+} */
+/* YE HM NE FLEXBOX KO DAIKHA HAI K KAISE YE KAAM KR RAHA HAI AUR KAISE YE ELEMENTS KO VERTICALLY AUR HORIZENTALLY ALIGN KR RAHA HAI  */
+
+/* .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 40px);
+  background-color: orangered;
+  gap: 10px;
+  padding: 10px;
+} */
+/* YAHAN HAMARAY PAAS GRID KI WORKING SHOW HO RAHI HAI */
+
+/* FLWXBOX ONE-DIMENTIONAL (ROW YA COLOUMN) KO DAIKHTA HAI grid WHILE TWO-DIMENSIONAL(ROW+COLOUMN) KA HOTA.
+ITEM KO AIK LINE MAIN ARRANGE KARNE K LIYE FLEXBOX AUR PURE LAYOUTS BANANY K LIYE GRID.
+JUSTIFY-CONTENT(:horizontal) AUR ALIGN-ITEM(:vertical) FLEX MAIN JB K GRID-TEMPLATE-COLOUR/ROW GRID MN.
+NAVBAR, BUTTONS, CARDS WAGHAIRA K LIYE JB K FULL LAYOUT, DASHBOARDS WAGHAIRA GRID MN */
+
+.fonts {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2rem;
+  /* font-weight: 100; */
+  line-height: 1;
+  text-align: center;
+  color: rgb(222, 78, 78);
+  background-color: rgb(107, 161, 143);
+  padding: 20px;
+  margin: 20px;
+  font-weight: bolder;
+  font-style: italic;
+}
+/* //YE FONTS WAGHAIRA MAIN SARA KAAM KARNA YE TYPOGRAPHY MAIN ATA HAI ABI IS TEXT KO HM NE FONT FAMILY, SIZE, STYLE AUR WEIGHT DIA HAI  */
+
+body {
+  background-color: rgb(186, 186, 207) !important;
+  background-size: cover;
+}
+@media (max-width: 1440px) {
+  body {
+    background-color: black !important;
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    background-color: rgb(10, 126, 126) !important;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    background-color: blue !important;
+  }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  body {
+    background-color: aqua !important;
+  }
+}
+@media (max-width: 320px) {
+  body {
+    background-color: brown !important;
+  }
+}
+/* YE MEDIA QURIES HOTI HAIN YE DIFFERENT SCREENS PR RESPONSIVE KARNE K LIYE USE HOTI HAIN HM NE ISKO DONO METHODS SE USE KR LIA HAI   */
